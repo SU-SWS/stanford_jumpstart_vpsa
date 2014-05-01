@@ -1,0 +1,10 @@
+name = Stanford Sites Jumpstart VPSA
+description = For all thing custom with JSVPSA
+core = 7.x
+package = Stanford Sites Jumpstart VPSA
+php = 5.3
+version = 7.x-1.x
+project = stanford_jumpstart_vpsa
+
+dependencies[] = stanford_jumpstart
+; stylesheets[all][] = css/stanford_jumpstart_vpsa.css

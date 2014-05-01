@@ -1,0 +1,44 @@
+/* Change descriptor class into summary styles on News and Events nodes */
+
+.node-type-stanford-event #node_stanford_event_full_group_descriptor_info.descriptor,
+.node-type-stanford-news-item #node_stanford_news_item_full_group_descriptor_info.descriptor {
+margin-bottom: 15px;
+font-weight: 300;
+font-size: 22px;
+line-height: 1.4em;
+text-transform: none;
+letter-spacing: normal;
+color: #333;
+}
+
+/* Special styles for the VPSA footer block */
+
+#block-bean-vpsa-student-affairs-block div.summary {
+padding-top: 5px;
+}
+
+/* Homepage styles to make the layout work */
+
+.front #content-body .block-views.span12 h2 {
+    background-color: #f2f1eb;
+    padding:10px;
+    margin-bottom:0;
+    border-bottom: #d5d2c5 1px solid;
+}
+
+.front #content-body .block-views.span12 .view-content {
+    padding: 0 10px
+    }
+
+/* updating calendar month and day titles to match homepage h2 styles */
+.view-stanford-events-calendar .date-nav-wrapper {
+    border-bottom: #d5d2c5 1px solid;
+}
+
+/* tweaks to Carousel to adjust for 12 column width */
+
+@media (max-width: 1199px) and (min-width: 979px) {
+.view.carousel .carousel-block .carousel-caption {
+width: 34%;
+}
+}
