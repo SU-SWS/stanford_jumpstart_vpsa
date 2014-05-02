@@ -3,6 +3,7 @@ core = 7.x
 package = Stanford Sites Jumpstart VPSA
 version = 7.x-1.0-alpha6
 project = vpsa_landing_page
+stylesheets[all][] = css/vpsa-landing-page.css
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = field_collection
