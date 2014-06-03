@@ -37,7 +37,7 @@ function stanford_jumpstart_vpsa_layouts_menu_block_blocks() {
     'stanford_jsvpsa_layouts-2' => array(
       'menu_name'   => 'main-menu',
       'parent_mlid' => 0,
-      'title_link'  => 1,
+      'title_link'  => 0,
       'admin_title' => 'Main Menu - Secondary - 2 Depths',
       'level'       => 2,
       'follow'      => 0,
@@ -48,7 +48,7 @@ function stanford_jumpstart_vpsa_layouts_menu_block_blocks() {
     'stanford_jsvpsa_layouts-3' => array(
       'menu_name'   => 'main-menu',
       'parent_mlid' => 0,
-      'title_link'  => 1,
+      'title_link'  => 0,
       'admin_title' => 'Main Menu - Secondary - 3 Depths',
       'level'       => 2,
       'follow'      => 0,
@@ -59,7 +59,7 @@ function stanford_jumpstart_vpsa_layouts_menu_block_blocks() {
     'stanford_jsvpsa_layouts-4' => array(
       'menu_name'   => 'main-menu',
       'parent_mlid' => 0,
-      'title_link'  => 1,
+      'title_link'  => 0,
       'admin_title' => 'Main Menu - Secondary - 4 Depths',
       'level'       => 2,
       'follow'      => 0,
