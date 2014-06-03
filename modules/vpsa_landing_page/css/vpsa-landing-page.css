@@ -1,24 +1,24 @@
-/* Landing Page content type styles */ 
+/* Landing Page content type styles */
 
-.node-type-vpsa-landing-page .node-vpsa-landing-page .field-collection-container { 
-    border-top: 1px solid #f1f2ed; 
-    margin-top: 1em; 
-    padding-top: 1em; 
-    width: 100%; 
-} 
+.node-type-vpsa-landing-page .node-vpsa-landing-page .field-collection-container {
+    border-top: 1px solid #8C1515;
+    margin-top: 1em;
+    padding-top: 1em;
+    width: 100%;
+}
 
-.node-type-vpsa-landing-page .node-vpsa-landing-page .entity-field-collection-item { 
-    border-bottom: 1px solid #f1f2ed; 
-    margin-bottom: 1em; 
-    padding-bottom: 0; 
-    overflow: auto; 
-} 
+.node-type-vpsa-landing-page .node-vpsa-landing-page .entity-field-collection-item {
+    border-bottom: 1px solid #8C1515;
+    margin-bottom: 1em;
+    padding-bottom: 0;
+    overflow: auto;
+}
 
-.node-type-vpsa-landing-page .field-name-field-v-postcard-group .postcard-left .postcard-col2 { 
-    padding-right: 30px; 
-    width: 62%; 
-} 
+.node-type-vpsa-landing-page .field-name-field-v-postcard-group .postcard-left .postcard-col2 {
+    padding-right: 30px;
+    width: 62%;
+}
 
-.node-type-vpsa-landing-page .field-name-field-v-postcard-group .field-name-field-v-link .field-item { 
-    padding-bottom: .5em; 
+.node-type-vpsa-landing-page .field-name-field-v-postcard-group .field-name-field-v-link .field-item {
+    padding-bottom: .5em;
 }
