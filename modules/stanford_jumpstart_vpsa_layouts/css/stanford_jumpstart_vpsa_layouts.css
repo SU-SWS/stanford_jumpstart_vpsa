@@ -1,3 +1,8 @@
+/* global VPSA */
+hr {
+border-top: 1px solid #8C1515;
+}
+
 /* Change descriptor class into summary styles on News and Events nodes */
 
 .node-type-stanford-event #node_stanford_event_full_group_descriptor_info.descriptor,
@@ -11,7 +16,22 @@ letter-spacing: normal;
 color: #333;
 }
 
+/* Preservce descriptor on the news categories */
+
+.node-stanford-news-item .field-name-field-s-news-categories {
+text-transform: uppercase;
+letter-spacing: .04em;
+font-size: 12px;
+line-height: 1.5em;
+color: #585754;
+font-weight: normal;
+}
+
 /* Special styles for the VPSA footer block */
+
+#footer {
+background: #f2f1eb;
+}
 
 #block-bean-vpsa-student-affairs-block div.summary {
 padding-top: 5px;
@@ -26,7 +46,7 @@ padding-top: 5px;
     border-bottom: #d5d2c5 1px solid;
 }
 
-.front #content-body .block-views.span12 .view-content {
+.front #content-body .block-views.span12 .view-content, .front #content-body .block-views.span12 .more-link {
     padding: 0 10px
     }
 
