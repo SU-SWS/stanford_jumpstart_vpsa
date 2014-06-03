@@ -123,9 +123,9 @@ function stanford_jumpstart_vpsa_layouts_context_default_contexts() {
           'region' => 'global_header',
           'weight' => '-10',
         ),
-        'stanford_jsvpsa_layouts-1-2' => array(
+        'stanford_jsvpsa_layouts-1' => array(
           'module' => 'menu_block',
-          'delta' => 'stanford_jsvpsa_layouts-1-2',
+          'delta' => 'stanford_jsvpsa_layouts-1',
           'region' => 'navigation',
           'weight' => '-10',
         ),
