@@ -70,10 +70,39 @@ function stanford_jumpstart_vpsa_layouts_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
+  $context->name = 'landing_page_content_type';
+  $context->description = 'Landing Page Content Type';
+  $context->tag = 'Landing Page Content Type';
+  $context->conditions = array(
+    'node' => array(
+      'values' => array(
+        'vpsa_landing_page' => 'vpsa_landing_page',
+      ),
+      'options' => array(
+        'node_form' => '0',
+      ),
+    ),
+  );
+  $context->reactions = array();
+  $context->condition_mode = 1;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Landing Page Content Type');
+  $export['landing_page_content_type'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
   $context->name = 'vpsa_all_pages_but_homepage';
-  $context->description = 'VPSA All pages but the home page';
+  $context->description = 'VPSA All pages but the home page and landing pages';
   $context->tag = 'Sub-pages';
   $context->conditions = array(
+    'context' => array(
+      'values' => array(
+        '~landing_page_content_type' => '~landing_page_content_type',
+      ),
+    ),
     'path' => array(
       'values' => array(
         '~<front>' => '~<front>',
@@ -83,21 +112,21 @@ function stanford_jumpstart_vpsa_layouts_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'stanford_jsvpsa_layouts-4' => array(
+        'menu_block-2' => array(
           'module' => 'menu_block',
-          'delta' => 'stanford_jsvpsa_layouts-4',
+          'delta' => '2',
           'region' => 'sidebar_first',
           'weight' => '-10',
         ),
       ),
     ),
   );
-  $context->condition_mode = 0;
+  $context->condition_mode = 1;
 
   // Translatables
   // Included for use with string extractors like potx.
   t('Sub-pages');
-  t('VPSA All pages but the home page');
+  t('VPSA All pages but the home page and landing pages');
 
   $export['vpsa_all_pages_but_homepage'] = $context;
 
