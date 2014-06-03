@@ -112,9 +112,9 @@ function stanford_jumpstart_vpsa_layouts_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'menu_block-2' => array(
+        'stanford_jsvpsa_layouts-4' => array(
           'module' => 'menu_block',
-          'delta' => '2',
+          'delta' => 'stanford_jsvpsa_layouts-4',
           'region' => 'sidebar_first',
           'weight' => '-10',
         ),
