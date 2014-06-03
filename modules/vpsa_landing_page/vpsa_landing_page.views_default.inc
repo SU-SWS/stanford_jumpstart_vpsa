@@ -395,7 +395,7 @@ function vpsa_landing_page_views_default_views() {
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['path'] = 'admin/manage/landing-page';
   $handler->display->display_options['menu']['type'] = 'normal';
-  $handler->display->display_options['menu']['title'] = 'Manage Pages';
+  $handler->display->display_options['menu']['title'] = 'Manage Landing Pages';
   $handler->display->display_options['menu']['weight'] = '';
   $handler->display->display_options['menu']['name'] = 'menu-manage-content-by-type';
   $handler->display->display_options['menu']['context'] = 0;
