@@ -43,15 +43,6 @@ function stanford_jumpstart_vpsa_roles_permissions_user_default_permissions() {
     'module' => 'contextual',
   );
 
-  // Exported permission: 'access dashboard'.
-  $permissions['access dashboard'] = array(
-    'name' => 'access dashboard',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'dashboard',
-  );
-
   // Exported permission: 'access jumpstart features'.
   $permissions['access jumpstart features'] = array(
     'name' => 'access jumpstart features',
