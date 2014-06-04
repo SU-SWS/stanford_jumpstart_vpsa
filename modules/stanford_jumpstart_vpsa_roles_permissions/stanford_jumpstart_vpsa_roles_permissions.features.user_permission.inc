@@ -10,49 +10,78 @@
 function stanford_jumpstart_vpsa_roles_permissions_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: 'access administration menu'.
-  $permissions['access administration menu'] = array(
-    'name' => 'access administration menu',
+  // Exported permission: 'access content'.
+  $permissions['access content'] = array(
+    'name' => 'access content',
     'roles' => array(
       'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
     ),
-    'module' => 'admin_menu',
+    'module' => 'node',
   );
 
-  // Exported permission: 'access all views'.
-  $permissions['access all views'] = array(
-    'name' => 'access all views',
+  // Exported permission: 'access content overview'.
+  $permissions['access content overview'] = array(
+    'name' => 'access content overview',
     'roles' => array(
       'administrator' => 'administrator',
+      'site owner' => 'site owner',
     ),
-    'module' => 'views',
+    'module' => 'node',
   );
 
-  // Exported permission: 'access bean overview'.
-  $permissions['access bean overview'] = array(
-    'name' => 'access bean overview',
+  // Exported permission: 'access contextual links'.
+  $permissions['access contextual links'] = array(
+    'name' => 'access contextual links',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
+      'site owner' => 'site owner',
+      'student assistant' => 'student assistant',
     ),
-    'module' => 'bean',
+    'module' => 'contextual',
   );
 
-  // Exported permission: 'access site in maintenance mode'.
-  $permissions['access site in maintenance mode'] = array(
-    'name' => 'access site in maintenance mode',
+  // Exported permission: 'access dashboard'.
+  $permissions['access dashboard'] = array(
+    'name' => 'access dashboard',
     'roles' => array(
       'administrator' => 'administrator',
     ),
-    'module' => 'system',
+    'module' => 'dashboard',
   );
 
-  // Exported permission: 'access site reports'.
-  $permissions['access site reports'] = array(
-    'name' => 'access site reports',
+  // Exported permission: 'access jumpstart features'.
+  $permissions['access jumpstart features'] = array(
+    'name' => 'access jumpstart features',
     'roles' => array(
       'administrator' => 'administrator',
+      'site owner' => 'site owner',
     ),
-    'module' => 'system',
+    'module' => 'stanford_jumpstart',
+  );
+
+  // Exported permission: 'access jumpstart help'.
+  $permissions['access jumpstart help'] = array(
+    'name' => 'access jumpstart help',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'site owner' => 'site owner',
+      'student assistant' => 'student assistant',
+    ),
+    'module' => 'stanford_jumpstart',
+  );
+
+  // Exported permission: 'access user profiles'.
+  $permissions['access user profiles'] = array(
+    'name' => 'access user profiles',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'user',
   );
 
   // Exported permission: 'access workbench'.
@@ -67,49 +96,24 @@ function stanford_jumpstart_vpsa_roles_permissions_user_default_permissions() {
     'module' => 'workbench',
   );
 
-  // Exported permission: 'admin_display_suite'.
-  $permissions['admin_display_suite'] = array(
-    'name' => 'admin_display_suite',
+  // Exported permission: 'administer bean settings'.
+  $permissions['administer bean settings'] = array(
+    'name' => 'administer bean settings',
     'roles' => array(
       'administrator' => 'administrator',
-    ),
-    'module' => 'ds',
-  );
-
-  // Exported permission: 'administer JW Player presets'.
-  $permissions['administer JW Player presets'] = array(
-    'name' => 'administer JW Player presets',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'jw_player',
-  );
-
-  // Exported permission: 'administer actions'.
-  $permissions['administer actions'] = array(
-    'name' => 'administer actions',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'system',
-  );
-
-  // Exported permission: 'administer bean types'.
-  $permissions['administer bean types'] = array(
-    'name' => 'administer bean types',
-    'roles' => array(
-      'administrator' => 'administrator',
+      'site owner' => 'site owner',
     ),
     'module' => 'bean',
   );
 
-  // Exported permission: 'administer beans'.
-  $permissions['administer beans'] = array(
-    'name' => 'administer beans',
+  // Exported permission: 'administer blocks'.
+  $permissions['administer blocks'] = array(
+    'name' => 'administer blocks',
     'roles' => array(
       'administrator' => 'administrator',
+      'site owner' => 'site owner',
     ),
-    'module' => 'bean',
+    'module' => 'block',
   );
 
   // Exported permission: 'administer content types'.
@@ -119,69 +123,6 @@ function stanford_jumpstart_vpsa_roles_permissions_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: 'administer contexts'.
-  $permissions['administer contexts'] = array(
-    'name' => 'administer contexts',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'context_ui',
-  );
-
-  // Exported permission: 'administer css injection'.
-  $permissions['administer css injection'] = array(
-    'name' => 'administer css injection',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'css_injector',
-  );
-
-  // Exported permission: 'administer features'.
-  $permissions['administer features'] = array(
-    'name' => 'administer features',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'features',
-  );
-
-  // Exported permission: 'administer feeds'.
-  $permissions['administer feeds'] = array(
-    'name' => 'administer feeds',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'feeds',
-  );
-
-  // Exported permission: 'administer feeds_tamper'.
-  $permissions['administer feeds_tamper'] = array(
-    'name' => 'administer feeds_tamper',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'feeds_tamper',
-  );
-
-  // Exported permission: 'administer field collections'.
-  $permissions['administer field collections'] = array(
-    'name' => 'administer field collections',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'field_collection',
-  );
-
-  // Exported permission: 'administer fieldgroups'.
-  $permissions['administer fieldgroups'] = array(
-    'name' => 'administer fieldgroups',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'field_group',
   );
 
   // Exported permission: 'administer file types'.
@@ -202,49 +143,35 @@ function stanford_jumpstart_vpsa_roles_permissions_user_default_permissions() {
     'module' => 'file_entity',
   );
 
-  // Exported permission: 'administer filters'.
-  $permissions['administer filters'] = array(
-    'name' => 'administer filters',
+  // Exported permission: 'administer menu'.
+  $permissions['administer menu'] = array(
+    'name' => 'administer menu',
     'roles' => array(
       'administrator' => 'administrator',
+      'site owner' => 'site owner',
+      'student assistant' => 'student assistant',
     ),
-    'module' => 'filter',
+    'module' => 'menu',
   );
 
-  // Exported permission: 'administer image styles'.
-  $permissions['administer image styles'] = array(
-    'name' => 'administer image styles',
+  // Exported permission: 'administer nodes'.
+  $permissions['administer nodes'] = array(
+    'name' => 'administer nodes',
     'roles' => array(
       'administrator' => 'administrator',
+      'site owner' => 'site owner',
     ),
-    'module' => 'image',
+    'module' => 'node',
   );
 
-  // Exported permission: 'administer modules'.
-  $permissions['administer modules'] = array(
-    'name' => 'administer modules',
+  // Exported permission: 'administer permissions'.
+  $permissions['administer permissions'] = array(
+    'name' => 'administer permissions',
     'roles' => array(
       'administrator' => 'administrator',
+      'site owner' => 'site owner',
     ),
-    'module' => 'system',
-  );
-
-  // Exported permission: 'administer pathauto'.
-  $permissions['administer pathauto'] = array(
-    'name' => 'administer pathauto',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'pathauto',
-  );
-
-  // Exported permission: 'administer redirects'.
-  $permissions['administer redirects'] = array(
-    'name' => 'administer redirects',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'redirect',
+    'module' => 'user',
   );
 
   // Exported permission: 'administer search'.
@@ -254,15 +181,6 @@ function stanford_jumpstart_vpsa_roles_permissions_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'search',
-  );
-
-  // Exported permission: 'administer software updates'.
-  $permissions['administer software updates'] = array(
-    'name' => 'administer software updates',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'system',
   );
 
   // Exported permission: 'administer stanford date timepicker'.
@@ -283,22 +201,14 @@ function stanford_jumpstart_vpsa_roles_permissions_user_default_permissions() {
     'module' => 'taxonomy',
   );
 
-  // Exported permission: 'administer themes'.
-  $permissions['administer themes'] = array(
-    'name' => 'administer themes',
+  // Exported permission: 'administer users'.
+  $permissions['administer users'] = array(
+    'name' => 'administer users',
     'roles' => array(
       'administrator' => 'administrator',
+      'site owner' => 'site owner',
     ),
-    'module' => 'system',
-  );
-
-  // Exported permission: 'administer url aliases'.
-  $permissions['administer url aliases'] = array(
-    'name' => 'administer url aliases',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'path',
+    'module' => 'user',
   );
 
   // Exported permission: 'administer views'.
@@ -382,24 +292,6 @@ function stanford_jumpstart_vpsa_roles_permissions_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: 'clear stanford_event_importer feeds'.
-  $permissions['clear stanford_event_importer feeds'] = array(
-    'name' => 'clear stanford_event_importer feeds',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'feeds',
-  );
-
-  // Exported permission: 'context ajax block access'.
-  $permissions['context ajax block access'] = array(
-    'name' => 'context ajax block access',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'context_ui',
-  );
-
   // Exported permission: 'create article content'.
   $permissions['create article content'] = array(
     'name' => 'create article content',
@@ -460,6 +352,16 @@ function stanford_jumpstart_vpsa_roles_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'create stanford_page content'.
+  $permissions['create stanford_page content'] = array(
+    'name' => 'create stanford_page content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create stanford_slide content'.
   $permissions['create stanford_slide content'] = array(
     'name' => 'create stanford_slide content',
@@ -469,6 +371,16 @@ function stanford_jumpstart_vpsa_roles_permissions_user_default_permissions() {
       'site owner' => 'site owner',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'create url aliases'.
+  $permissions['create url aliases'] = array(
+    'name' => 'create url aliases',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'path',
   );
 
   // Exported permission: 'create vpsa_landing_page content'.
@@ -548,6 +460,16 @@ function stanford_jumpstart_vpsa_roles_permissions_user_default_permissions() {
   // Exported permission: 'delete any stanford_news_item content'.
   $permissions['delete any stanford_news_item content'] = array(
     'name' => 'delete any stanford_news_item content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete any stanford_page content'.
+  $permissions['delete any stanford_page content'] = array(
+    'name' => 'delete any stanford_page content',
     'roles' => array(
       'administrator' => 'administrator',
       'site owner' => 'site owner',
@@ -661,6 +583,16 @@ function stanford_jumpstart_vpsa_roles_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete own stanford_page content'.
+  $permissions['delete own stanford_page content'] = array(
+    'name' => 'delete own stanford_page content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete own stanford_slide content'.
   $permissions['delete own stanford_slide content'] = array(
     'name' => 'delete own stanford_slide content',
@@ -754,15 +686,6 @@ function stanford_jumpstart_vpsa_roles_permissions_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'taxonomy',
-  );
-
-  // Exported permission: 'display drupal links'.
-  $permissions['display drupal links'] = array(
-    'name' => 'display drupal links',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'admin_menu',
   );
 
   // Exported permission: 'download any audio files'.
@@ -915,6 +838,18 @@ function stanford_jumpstart_vpsa_roles_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit any stanford_page content'.
+  $permissions['edit any stanford_page content'] = array(
+    'name' => 'edit any stanford_page content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'site owner' => 'site owner',
+      'student assistant' => 'student assistant',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any stanford_slide content'.
   $permissions['edit any stanford_slide content'] = array(
     'name' => 'edit any stanford_slide content',
@@ -944,15 +879,6 @@ function stanford_jumpstart_vpsa_roles_permissions_user_default_permissions() {
       'student assistant' => 'student assistant',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: 'edit bean view mode'.
-  $permissions['edit bean view mode'] = array(
-    'name' => 'edit bean view mode',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'bean',
   );
 
   // Exported permission: 'edit own article content'.
@@ -1029,6 +955,16 @@ function stanford_jumpstart_vpsa_roles_permissions_user_default_permissions() {
       'editor' => 'editor',
       'site owner' => 'site owner',
       'student assistant' => 'student assistant',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own stanford_page content'.
+  $permissions['edit own stanford_page content'] = array(
+    'name' => 'edit own stanford_page content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'site owner' => 'site owner',
     ),
     'module' => 'node',
   );
@@ -1119,33 +1055,6 @@ function stanford_jumpstart_vpsa_roles_permissions_user_default_permissions() {
     'module' => 'taxonomy',
   );
 
-  // Exported permission: 'flush caches'.
-  $permissions['flush caches'] = array(
-    'name' => 'flush caches',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'admin_menu',
-  );
-
-  // Exported permission: 'generate features'.
-  $permissions['generate features'] = array(
-    'name' => 'generate features',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'features',
-  );
-
-  // Exported permission: 'import stanford_event_importer feeds'.
-  $permissions['import stanford_event_importer feeds'] = array(
-    'name' => 'import stanford_event_importer feeds',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'feeds',
-  );
-
   // Exported permission: 'jumpstart assign administrator role'.
   $permissions['jumpstart assign administrator role'] = array(
     'name' => 'jumpstart assign administrator role',
@@ -1162,15 +1071,6 @@ function stanford_jumpstart_vpsa_roles_permissions_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'stanford_jumpstart',
-  );
-
-  // Exported permission: 'manage features'.
-  $permissions['manage features'] = array(
-    'name' => 'manage features',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'features',
   );
 
   // Exported permission: 'moderate content from draft to needs_review'.
@@ -1207,13 +1107,26 @@ function stanford_jumpstart_vpsa_roles_permissions_user_default_permissions() {
     'module' => 'workbench_moderation',
   );
 
-  // Exported permission: 'notify of path changes'.
-  $permissions['notify of path changes'] = array(
-    'name' => 'notify of path changes',
+  // Exported permission: 'revert revisions'.
+  $permissions['revert revisions'] = array(
+    'name' => 'revert revisions',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
+      'site owner' => 'site owner',
     ),
-    'module' => 'pathauto',
+    'module' => 'node',
+  );
+
+  // Exported permission: 'search content'.
+  $permissions['search content'] = array(
+    'name' => 'search content',
+    'roles' => array(
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+      'student assistant' => 'student assistant',
+    ),
+    'module' => 'search',
   );
 
   // Exported permission: 'select account cancellation method'.
@@ -1225,56 +1138,70 @@ function stanford_jumpstart_vpsa_roles_permissions_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: 'show format selection for file'.
-  $permissions['show format selection for file'] = array(
-    'name' => 'show format selection for file',
-    'roles' => array(),
-    'module' => 'better_formats',
-  );
-
-  // Exported permission: 'show format tips'.
-  $permissions['show format tips'] = array(
-    'name' => 'show format tips',
+  // Exported permission: 'show format selection for bean'.
+  $permissions['show format selection for bean'] = array(
+    'name' => 'show format selection for bean',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
+      'site owner' => 'site owner',
     ),
     'module' => 'better_formats',
   );
 
-  // Exported permission: 'show more format tips link'.
-  $permissions['show more format tips link'] = array(
-    'name' => 'show more format tips link',
+  // Exported permission: 'show format selection for field_collection_item'.
+  $permissions['show format selection for field_collection_item'] = array(
+    'name' => 'show format selection for field_collection_item',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
+      'site owner' => 'site owner',
     ),
     'module' => 'better_formats',
   );
 
-  // Exported permission: 'tamper stanford_event_importer'.
-  $permissions['tamper stanford_event_importer'] = array(
-    'name' => 'tamper stanford_event_importer',
+  // Exported permission: 'show format selection for node'.
+  $permissions['show format selection for node'] = array(
+    'name' => 'show format selection for node',
     'roles' => array(
       'administrator' => 'administrator',
+      'authenticated user' => 'authenticated user',
+      'editor' => 'editor',
+      'site owner' => 'site owner',
     ),
-    'module' => 'feeds_tamper',
+    'module' => 'better_formats',
   );
 
-  // Exported permission: 'unlock stanford_event_importer feeds'.
-  $permissions['unlock stanford_event_importer feeds'] = array(
-    'name' => 'unlock stanford_event_importer feeds',
+  // Exported permission: 'show format selection for taxonomy_term'.
+  $permissions['show format selection for taxonomy_term'] = array(
+    'name' => 'show format selection for taxonomy_term',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
+      'site owner' => 'site owner',
     ),
-    'module' => 'feeds',
+    'module' => 'better_formats',
   );
 
-  // Exported permission: 'use PHP for title patterns'.
-  $permissions['use PHP for title patterns'] = array(
-    'name' => 'use PHP for title patterns',
+  // Exported permission: 'show format selection for user'.
+  $permissions['show format selection for user'] = array(
+    'name' => 'show format selection for user',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
+      'site owner' => 'site owner',
     ),
-    'module' => 'auto_nodetitle',
+    'module' => 'better_formats',
+  );
+
+  // Exported permission: 'stanford jumpstart clear caches'.
+  $permissions['stanford jumpstart clear caches'] = array(
+    'name' => 'stanford jumpstart clear caches',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'stanford_jumpstart_vpsa_shortcuts',
   );
 
   // Exported permission: 'use advanced search'.
@@ -1284,6 +1211,42 @@ function stanford_jumpstart_vpsa_roles_permissions_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'search',
+  );
+
+  // Exported permission: 'use text format content_editor_text_format'.
+  $permissions['use text format content_editor_text_format'] = array(
+    'name' => 'use text format content_editor_text_format',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'site owner' => 'site owner',
+      'student assistant' => 'student assistant',
+    ),
+    'module' => 'filter',
+  );
+
+  // Exported permission: 'use text format filtered_html'.
+  $permissions['use text format filtered_html'] = array(
+    'name' => 'use text format filtered_html',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+      'editor' => 'editor',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'filter',
+  );
+
+  // Exported permission: 'use text format full_html'.
+  $permissions['use text format full_html'] = array(
+    'name' => 'use text format full_html',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'filter',
   );
 
   // Exported permission: 'use workbench_moderation my drafts tab'.
@@ -1309,33 +1272,6 @@ function stanford_jumpstart_vpsa_roles_permissions_user_default_permissions() {
     'module' => 'workbench_moderation',
   );
 
-  // Exported permission: 'view advanced help index'.
-  $permissions['view advanced help index'] = array(
-    'name' => 'view advanced help index',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'advanced_help',
-  );
-
-  // Exported permission: 'view advanced help popup'.
-  $permissions['view advanced help popup'] = array(
-    'name' => 'view advanced help popup',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'advanced_help',
-  );
-
-  // Exported permission: 'view advanced help topic'.
-  $permissions['view advanced help topic'] = array(
-    'name' => 'view advanced help topic',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'advanced_help',
-  );
-
   // Exported permission: 'view all unpublished content'.
   $permissions['view all unpublished content'] = array(
     'name' => 'view all unpublished content',
@@ -1346,6 +1282,28 @@ function stanford_jumpstart_vpsa_roles_permissions_user_default_permissions() {
       'student assistant' => 'student assistant',
     ),
     'module' => 'workbench_moderation',
+  );
+
+  // Exported permission: 'view bean page'.
+  $permissions['view bean page'] = array(
+    'name' => 'view bean page',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'bean',
+  );
+
+  // Exported permission: 'view bean revisions'.
+  $permissions['view bean revisions'] = array(
+    'name' => 'view bean revisions',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'bean',
   );
 
   // Exported permission: 'view files'.
@@ -1397,6 +1355,16 @@ function stanford_jumpstart_vpsa_roles_permissions_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'view own unpublished content'.
+  $permissions['view own unpublished content'] = array(
+    'name' => 'view own unpublished content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'view private files'.
   $permissions['view private files'] = array(
     'name' => 'view private files',
@@ -1404,6 +1372,17 @@ function stanford_jumpstart_vpsa_roles_permissions_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'view revisions'.
+  $permissions['view revisions'] = array(
+    'name' => 'view revisions',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node',
   );
 
   return $permissions;
