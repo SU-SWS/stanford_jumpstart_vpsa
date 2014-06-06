@@ -32,17 +32,17 @@ function stanford_jumpstart_vpsa_layouts_context_default_contexts() {
           'region' => 'main_upper',
           'weight' => '-10',
         ),
-        'views-stanford_events_views-block_1' => array(
+        'views-stanford_events_views-block_3' => array(
           'module' => 'views',
-          'delta' => 'stanford_events_views-block_1',
-          'region' => 'content',
-          'weight' => '-10',
-        ),
-        'views-3b9ba5dd07e9aa559cbe7d1ced47f7b7' => array(
-          'module' => 'views',
-          'delta' => '3b9ba5dd07e9aa559cbe7d1ced47f7b7',
+          'delta' => 'stanford_events_views-block_3',
           'region' => 'content',
           'weight' => '-9',
+        ),
+        'views-stanford_news-block_1' => array(
+          'module' => 'views',
+          'delta' => 'stanford_news-block_1',
+          'region' => 'content',
+          'weight' => '-8',
         ),
         'bean-jumpstart-footer-social-media--0' => array(
           'module' => 'bean',
