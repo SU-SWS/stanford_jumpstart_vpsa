@@ -36,6 +36,7 @@ function stanford_jumpstart_vpsa_workflows_user_default_permissions() {
     'name' => 'bypass workbench moderation',
     'roles' => array(
       'administrator' => 'administrator',
+      'site owner' => 'site owner',
     ),
     'module' => 'workbench_moderation',
   );
@@ -125,6 +126,7 @@ function stanford_jumpstart_vpsa_workflows_user_default_permissions() {
     'name' => 'view moderation messages',
     'roles' => array(
       'administrator' => 'administrator',
+      'site_owner' => 'site_owner',
     ),
     'module' => 'workbench_moderation',
   );

@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * stanford_jumpstart_vpsa_roles_permissions.features.user_permission.inc
+ * stanford_jumpstart_vpsa_permissions.features.user_permission.inc
  */
 
 /**
  * Implements hook_user_default_permissions().
  */
-function stanford_jumpstart_vpsa_roles_permissions_user_default_permissions() {
+function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
   $permissions = array();
 
   // Exported permission: 'access content'.
