@@ -1,6 +1,6 @@
 /* global VPSA */
-hr {
-border-top: 1px solid #8C1515;
+body hr {
+  border-top: 1px solid #8C1515;
 }
 
 /* Change descriptor class into summary styles on News and Events nodes */
@@ -29,8 +29,8 @@ font-weight: normal;
 
 /* Special styles for the VPSA footer block */
 
-#footer {
-background: #f2f1eb;
+body #footer {
+  background: #f2f1eb;
 }
 
 #block-bean-vpsa-student-affairs-block div.summary {
@@ -53,6 +53,10 @@ padding-top: 5px;
 /* updating calendar month and day titles to match homepage h2 styles */
 .view-stanford-events-calendar .date-nav-wrapper {
     border-bottom: #d5d2c5 1px solid;
+}
+
+.block-stanford-jumpstart-vpsa-shortcuts {
+  float: right;
 }
 
 /* tweaks to Carousel to adjust for 12 column width */

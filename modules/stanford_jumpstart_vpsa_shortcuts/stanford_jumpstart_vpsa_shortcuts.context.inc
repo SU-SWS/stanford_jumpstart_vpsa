@@ -59,7 +59,7 @@ function stanford_jumpstart_vpsa_shortcuts_context_default_contexts() {
           'weight' => '-6',
         ),
         'stanford_jumpstart_shortcuts-hello' => array(
-          'module' => 'stanford_jumpstart_shortcuts',
+          'module' => 'stanford_jumpstart_vpsa_shortcuts',
           'delta' => 'hello',
           'region' => 'admin_shortcuts',
           'weight' => '-5',

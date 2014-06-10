@@ -3,3 +3,13 @@
  * @file
  * This is for all things custom with Jumpstart VPSA
  */
+
+/**
+ * Implements hook_wysiwyg_editor_settings_alter().
+ */
+
+function stanford_jumpstart_vpsa_wysiwyg_editor_settings_alter(&$settings, $context) {
+  // add editor CSS to fix overflow issue
+  $editor_css = url(drupal_get_path('module', 'stanford_jumpstart_vpsa') . '/css/editor.css');
+  $settings['contentsCss'][] = $editor_css;
+}

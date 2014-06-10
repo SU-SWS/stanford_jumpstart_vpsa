@@ -100,6 +100,8 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'name' => 'administer content types',
     'roles' => array(
       'administrator' => 'administrator',
+      'site owner' => 'site owner',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -258,6 +260,8 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'name' => 'create files',
     'roles' => array(
       'administrator' => 'administrator',
+      'site owner' => 'site owner',
+      'editor' => 'editor',
     ),
     'module' => 'file_entity',
   );
@@ -288,6 +292,7 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'name' => 'create stanford_event_importer content',
     'roles' => array(
       'administrator' => 'administrator',
+      'site owner' => 'site owner',
     ),
     'module' => 'node',
   );
@@ -331,6 +336,7 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'site owner' => 'site owner',
+      'editor' => 'editor',
     ),
     'module' => 'path',
   );
@@ -341,6 +347,8 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'student assistant' => 'student assistant',
+      'site owner' => 'site owner',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
