@@ -31,6 +31,17 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'view the administration theme'.
+  $permissions['view the administration theme'] = array(
+    'name' => 'view the administration theme',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'site owner' => 'site owner',
+      'editor' => 'editor',
+    ),
+    'module' => 'system',
+  );
+
   // Exported permission: 'access contextual links'.
   $permissions['access contextual links'] = array(
     'name' => 'access contextual links',
