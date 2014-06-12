@@ -14,11 +14,37 @@
     overflow: auto;
 }
 
-.node-type-vpsa-landing-page .field-name-field-v-postcard-group .postcard-left .postcard-col2 {
+/*.node-type-vpsa-landing-page .field-name-field-v-postcard-group .postcard-left .postcard-col2 {
     padding-right: 30px;
     width: 62%;
-}
+}*/
 
 .node-type-vpsa-landing-page .field-name-field-v-postcard-group .field-name-field-v-link .field-item {
     padding-bottom: .5em;
+}
+
+
+
+
+.field-name-field-v-postcard-group .content > div {
+  display: table;
+}
+
+.field-name-field-v-postcard-group .content > div > div {
+  display: table-cell;
+  vertical-align: top;
+  text-align: left;
+}
+
+.field-name-field-v-postcard-group .content > div > div.group-v-postcard-col1 {
+  float: none;
+  width: 13%;
+}
+
+.field-name-field-v-postcard-group .content > div > div.group-v-postcard-col2 > div {
+  padding-left: 2em;
+}
+
+.field-name-field-v-postcard-group .content > div > div.group-v-postcard-col3 {
+   width: 15%;
 }
