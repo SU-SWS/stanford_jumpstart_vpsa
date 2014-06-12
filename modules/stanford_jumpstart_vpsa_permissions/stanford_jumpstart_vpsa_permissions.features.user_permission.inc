@@ -472,6 +472,8 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'name' => 'delete any vpsa_landing_page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'site owner' => 'site owner',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -589,6 +591,8 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'name' => 'delete own vpsa_landing_page content',
     'roles' => array(
       'administrator' => 'administrator',
+      'site owner' => 'site owner',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -848,6 +852,8 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'student assistant' => 'student assistant',
+      'site owner' => 'site owner',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -966,6 +972,8 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'student assistant' => 'student assistant',
+      'site owner' => 'site owner',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
