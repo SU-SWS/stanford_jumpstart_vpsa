@@ -13,3 +13,7 @@ function stanford_jumpstart_vpsa_wysiwyg_editor_settings_alter(&$settings, $cont
   $editor_css = url(drupal_get_path('module', 'stanford_jumpstart_vpsa') . '/css/editor.css');
   $settings['contentsCss'][] = $editor_css;
 }
+
+drupal_add_js( 'misc/collapse.js');
+drupal_add_js( 'misc/form.js');
+ 
