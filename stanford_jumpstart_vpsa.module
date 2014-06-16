@@ -14,6 +14,12 @@ function stanford_jumpstart_vpsa_wysiwyg_editor_settings_alter(&$settings, $cont
   $settings['contentsCss'][] = $editor_css;
 }
 
-drupal_add_js( 'misc/collapse.js');
-drupal_add_js( 'misc/form.js');
+// drupal_add_js('misc/collapse.js');
+// drupal_add_js('misc/form.js');
  
+function stanford_jumpstart_vpsa_preprocess_page($variables) {
+if (isset($variables['node'])) {
+		$node = $variables['node'];
+			if ($node->type == "stanford_page") {}
+		}
+}
