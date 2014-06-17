@@ -6,6 +6,7 @@ version = 7.x-1.0-alpha1
 project = stanford_jumpstart_vpsa_basic_page_import
 dependencies[] = ctools
 dependencies[] = feeds
+dependencies[] = feeds_xpathparser
 features[ctools][] = feeds:feeds_importer_default:1
 features[features_api][] = api:1
 features[feeds_importer][] = basic_page_import
