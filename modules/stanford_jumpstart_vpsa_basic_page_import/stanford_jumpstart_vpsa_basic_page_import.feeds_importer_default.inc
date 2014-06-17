@@ -34,8 +34,7 @@ function stanford_jumpstart_vpsa_basic_page_import_feeds_importer_default() {
           'xpathparser:1' => 'Body',
           'xpathparser:2' => 'Post-date',
           'xpathparser:3' => 'status',
-          'xpathparser:4' => 'Nid',
-        ),
+         ),
         'rawXML' => array(
           'xpathparser:0' => 0,
           'xpathparser:1' => 0,
@@ -49,8 +48,7 @@ function stanford_jumpstart_vpsa_basic_page_import_feeds_importer_default() {
           'debug' => array(
             'xpathparser:2' => 'xpathparser:2',
             'xpathparser:3' => 'xpathparser:3',
-            'xpathparser:4' => 'xpathparser:4',
-            'context' => 0,
+             'context' => 0,
             'xpathparser:0' => 0,
             'xpathparser:1' => 0,
           ),
@@ -62,7 +60,7 @@ function stanford_jumpstart_vpsa_basic_page_import_feeds_importer_default() {
       'plugin_key' => 'FeedsNodeProcessor',
       'config' => array(
         'expire' => '-1',
-        'author' => '0',
+        'author' => '9',
         'authorize' => 0,
         'mappings' => array(
           0 => array(
@@ -85,9 +83,14 @@ function stanford_jumpstart_vpsa_basic_page_import_feeds_importer_default() {
             'target' => 'status',
             'unique' => FALSE,
           ),
+          4 => array(
+            'source' => 'xpathparser:4',
+            'target' => 'guid',
+            'unique' => FALSE,
+          ),
         ),
         'update_existing' => '2',
-        'input_format' => 'full_html',
+        'input_format' => 'content_editor_text_format',
         'skip_hash_check' => 0,
         'bundle' => 'stanford_page',
       ),
