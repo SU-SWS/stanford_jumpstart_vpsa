@@ -1,6 +1,7 @@
 name = Stanford Jumpstart VPSA Basic Page Import
 core = 7.x
 package = Features
+php = 5.2.4
 version = 7.x-1.0-alpha1
 project = stanford_jumpstart_vpsa_basic_page_import
 dependencies[] = ctools

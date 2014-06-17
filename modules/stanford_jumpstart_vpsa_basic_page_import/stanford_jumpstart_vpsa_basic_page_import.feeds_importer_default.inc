@@ -62,7 +62,7 @@ function stanford_jumpstart_vpsa_basic_page_import_feeds_importer_default() {
       'plugin_key' => 'FeedsNodeProcessor',
       'config' => array(
         'expire' => '-1',
-        'author' => '9',
+        'author' => '0',
         'authorize' => 0,
         'mappings' => array(
           0 => array(
@@ -83,11 +83,6 @@ function stanford_jumpstart_vpsa_basic_page_import_feeds_importer_default() {
           3 => array(
             'source' => 'xpathparser:3',
             'target' => 'status',
-            'unique' => FALSE,
-          ),
-          4 => array(
-            'source' => 'xpathparser:4',
-            'target' => 'guid',
             'unique' => FALSE,
           ),
         ),
