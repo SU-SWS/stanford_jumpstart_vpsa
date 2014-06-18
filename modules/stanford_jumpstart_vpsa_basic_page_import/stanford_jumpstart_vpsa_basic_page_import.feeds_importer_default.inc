@@ -45,13 +45,6 @@ function stanford_jumpstart_vpsa_basic_page_import_feeds_importer_default() {
         'context' => '//nodes/node',
         'exp' => array(
           'errors' => 1,
-          'debug' => array(
-            'xpathparser:2' => 'xpathparser:2',
-            'xpathparser:3' => 'xpathparser:3',
-             'context' => 0,
-            'xpathparser:0' => 0,
-            'xpathparser:1' => 0,
-          ),
         ),
         'allow_override' => 1,
       ),
