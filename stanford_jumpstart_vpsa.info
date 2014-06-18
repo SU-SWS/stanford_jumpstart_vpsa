@@ -8,3 +8,4 @@ project = stanford_jumpstart_vpsa
 
 dependencies[] = stanford_jumpstart
 ; stylesheets[all][] = css/stanford_jumpstart_vpsa.css
+
