@@ -463,6 +463,7 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'name' => 'delete any video files',
     'roles' => array(
       'administrator' => 'administrator',
+      'site owner' => 'site owner',
     ),
     'module' => 'file_entity',
   );
@@ -582,6 +583,7 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'name' => 'delete own video files',
     'roles' => array(
       'administrator' => 'administrator',
+      'site owner' => 'site owner',
     ),
     'module' => 'file_entity',
   );
@@ -695,6 +697,7 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'name' => 'download any video files',
     'roles' => array(
       'administrator' => 'administrator',
+      'site owner' => 'site owner',
     ),
     'module' => 'file_entity',
   );
@@ -731,6 +734,7 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'name' => 'download own video files',
     'roles' => array(
       'administrator' => 'administrator',
+      'site owner' => 'site owner',
     ),
     'module' => 'file_entity',
   );
@@ -842,6 +846,7 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'name' => 'edit any video files',
     'roles' => array(
       'administrator' => 'administrator',
+      'site owner' => 'site owner',
     ),
     'module' => 'file_entity',
   );
@@ -962,6 +967,7 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'name' => 'edit own video files',
     'roles' => array(
       'administrator' => 'administrator',
+      'site owner' => 'site owner',
     ),
     'module' => 'file_entity',
   );
