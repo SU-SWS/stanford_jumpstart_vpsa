@@ -24,6 +24,7 @@ features[menu_links][] = menu-admin-shortcuts-ready-to-la_ready-to-launch:admin/
 features[menu_links][] = menu-admin-shortcuts-site-action_add-event:node/add/stanford-event
 features[menu_links][] = menu-admin-shortcuts-site-action_add-landing-page:node/add/vpsa-landing-page
 features[menu_links][] = menu-admin-shortcuts-site-action_add-news-item:node/add/stanford-news-item
+features[menu_links][] = menu-admin-shortcuts-site-action_add-video:node/add/stanford-video
 features[menu_links][] = menu-admin-shortcuts-site-action_add-page:node/add/stanford-page
 features[menu_links][] = menu-admin-shortcuts-site-action_add-slide:node/add/stanford-slide
 features[menu_links][] = menu-admin-shortcuts-site-action_edit-main-menu:admin/structure/menu/manage/main-menu
