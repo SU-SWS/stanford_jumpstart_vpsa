@@ -111,8 +111,6 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'name' => 'administer content types',
     'roles' => array(
       'administrator' => 'administrator',
-      'site owner' => 'site owner',
-      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -141,7 +139,6 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'site owner' => 'site owner',
-      'student assistant' => 'student assistant',
     ),
     'module' => 'menu',
   );
@@ -293,7 +290,6 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
       'administrator' => 'administrator',
       'editor' => 'editor',
       'site owner' => 'site owner',
-      'student assistant' => 'student assistant',
     ),
     'module' => 'node',
   );
@@ -315,7 +311,6 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
       'administrator' => 'administrator',
       'editor' => 'editor',
       'site owner' => 'site owner',
-      'student assistant' => 'student assistant',
     ),
     'module' => 'node',
   );
@@ -357,7 +352,6 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'name' => 'create vpsa_landing_page content',
     'roles' => array(
       'administrator' => 'administrator',
-      'student assistant' => 'student assistant',
       'site owner' => 'site owner',
       'editor' => 'editor',
     ),
