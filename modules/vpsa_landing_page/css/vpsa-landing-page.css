@@ -1,13 +1,13 @@
 /* Landing Page content type styles */
 
-.node-type-vpsa-landing-page .node-vpsa-landing-page .field-collection-container {
+.node-type-vpsa-landing-page #main .content .field-collection-container {
   border-top: 1px solid #8C1515;
   margin-top: 1em;
   padding-top: 1em;
   width: 100%;
 }
 
-.node-type-vpsa-landing-page .node-vpsa-landing-page .entity-field-collection-item {
+.node-type-vpsa-landing-page .content .field .entity-field-collection-item {
   border-bottom: 1px solid #8C1515;
   margin-bottom: 1em;
   padding-bottom: 0;
