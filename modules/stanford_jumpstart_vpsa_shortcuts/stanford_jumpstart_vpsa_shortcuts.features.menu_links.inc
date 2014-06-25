@@ -313,7 +313,7 @@ function stanford_jumpstart_vpsa_shortcuts_menu_default_menu_links() {
       ),
       'identifier' => 'menu-admin-shortcuts-site-action_refresh-site-content:admin/stanford/jumpstart/shortcuts/clear-cache',
     ),
-    'module' => 'stanford_jumpstart_shortcuts',
+    'module' => 'stanford_jumpstart_vpsa_shortcuts',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
