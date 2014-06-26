@@ -37,6 +37,19 @@ body #footer {
   padding-top: 5px;
 }
 
+#block-bean-vpsa-helpful-links-footer-block .field-type-link-field div a.more-link {
+  font-weight: normal;
+  text-transform: none;
+  font-size: 1.0em;
+  border-bottom: dotted 1px #827252;
+  margin: 0px;
+  line-height: 1.4em;
+}
+
+#block-bean-vpsa-helpful-links-footer-block .field-type-link-field div a.more-link:after {
+  content: '';
+}
+
 /* Homepage styles to make the layout work */
 
 .front #content-body .block-views.span12 h2 {
