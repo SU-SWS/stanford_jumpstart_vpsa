@@ -153,6 +153,27 @@ function stanford_jumpstart_vpsa_shortcuts_menu_default_menu_links() {
     'customized' => 1,
     'parent_identifier' => 'menu-admin-shortcuts-site-action_site-actions:admin/stanford-jumpstart',
   );
+   // Exported menu link: menu-admin-shortcuts-site-action_add-video:node/add/stanford-video
+  $menu_links['menu-admin-shortcuts-site-action_add-video:node/add/stanford-video'] = array(
+    'menu_name' => 'menu-admin-shortcuts-site-action',
+    'link_path' => 'node/add/stanford-video',
+    'router_path' => 'node/add/stanford-video',
+    'link_title' => 'Add Video',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'identifier' => 'menu-admin-shortcuts-site-action_add-video:node/add/stanford-video',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -40,
+    'customized' => 1,
+    'parent_identifier' => 'menu-admin-shortcuts-site-action_site-actions:admin/stanford-jumpstart',
+  );
   // Exported menu link: menu-admin-shortcuts-site-action_add-page:node/add/stanford-page
   $menu_links['menu-admin-shortcuts-site-action_add-page:node/add/stanford-page'] = array(
     'menu_name' => 'menu-admin-shortcuts-site-action',
@@ -313,7 +334,7 @@ function stanford_jumpstart_vpsa_shortcuts_menu_default_menu_links() {
       ),
       'identifier' => 'menu-admin-shortcuts-site-action_refresh-site-content:admin/stanford/jumpstart/shortcuts/clear-cache',
     ),
-    'module' => 'stanford_jumpstart_shortcuts',
+    'module' => 'stanford_jumpstart_vpsa_shortcuts',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
@@ -342,12 +363,15 @@ function stanford_jumpstart_vpsa_shortcuts_menu_default_menu_links() {
     'weight' => -50,
     'customized' => 0,
   );
+
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Add Event');
   t('Add Features');
   t('Add Landing Page');
   t('Add News Item');
+  t('Add Video');
   t('Add Page');
   t('Add Slide');
   t('Edit Main Menu');

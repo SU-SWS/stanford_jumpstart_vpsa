@@ -48,13 +48,13 @@ function stanford_jumpstart_vpsa_workflows_install() {
 function stanford_jumpstart_vpsa_workflows_get_content_types() {
   return array(
     'article' => 'draft',
-    'vpsa_landing_page' => 'draft',
-    'stanford_news_item' => 'published',
+    // 'vpsa_landing_page' => 'draft',
+    // 'stanford_news_item' => 'draft',
     'page' => 'draft',
-    'stanford_event' => 'published',
-    'stanford_event_importer' => 'published',
-    'stanford_video' => 'published',
-    'stanford_slide' => 'published',
-    'stanford_page' => 'draft',
+    // 'stanford_event' => 'draft',
+    // 'stanford_event_importer' => 'published',
+    // 'stanford_video' => 'published',
+    // 'stanford_slide' => 'published',
+    // 'stanford_page' => 'draft',
   );
 }

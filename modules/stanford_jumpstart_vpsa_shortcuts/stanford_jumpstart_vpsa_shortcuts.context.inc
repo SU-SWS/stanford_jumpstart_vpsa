@@ -22,6 +22,7 @@ function stanford_jumpstart_vpsa_shortcuts_context_default_contexts() {
         'administrator' => 'administrator',
         'editor' => 'editor',
         'site owner' => 'site owner',
+        'student assistant' => 'student assistant',
       ),
     ),
   );
