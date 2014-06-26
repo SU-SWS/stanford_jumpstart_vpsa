@@ -38,6 +38,7 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
       'administrator' => 'administrator',
       'site owner' => 'site owner',
       'editor' => 'editor',
+      'student assistant' => 'student assistant',
     ),
     'module' => 'system',
   );
