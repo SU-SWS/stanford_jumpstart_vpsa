@@ -36,7 +36,6 @@ function stanford_jumpstart_vpsa_workflows_user_default_permissions() {
     'name' => 'bypass workbench moderation',
     'roles' => array(
       'administrator' => 'administrator',
-      'site owner' => 'site owner',
     ),
     'module' => 'workbench_moderation',
   );
@@ -49,6 +48,17 @@ function stanford_jumpstart_vpsa_workflows_user_default_permissions() {
       'editor' => 'editor',
       'site owner' => 'site owner',
       'student assistant' => 'student assistant',
+    ),
+    'module' => 'workbench_moderation',
+  );
+
+  // Exported permission: 'moderate content from draft to published'.
+  $permissions['moderate content from draft to published'] = array(
+    'name' => 'moderate content from draft to published',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'site owner' => 'site owner',
     ),
     'module' => 'workbench_moderation',
   );
@@ -126,7 +136,6 @@ function stanford_jumpstart_vpsa_workflows_user_default_permissions() {
     'name' => 'view moderation messages',
     'roles' => array(
       'administrator' => 'administrator',
-      'site_owner' => 'site_owner',
     ),
     'module' => 'workbench_moderation',
   );
