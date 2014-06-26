@@ -39,6 +39,17 @@ function stanford_jumpstart_vpsa_workflows_install() {
     variable_set($variable_name, $var);
   }
 
+  // Add a transition because the features export does not work well with
+  // installatio profiles.
+
+  db_insert('workbench_moderation_transitions')
+    ->fields(array(
+      'from_name' => 'draft',
+      'to_name' => 'published',
+      )
+    )
+    ->execute();
+
 }
 
 /**
