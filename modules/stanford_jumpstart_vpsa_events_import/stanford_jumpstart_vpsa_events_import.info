@@ -1,0 +1,10 @@
+name = Stanford Jumpstart VPSA Events Import
+core = 7.x
+package = Stanford Jumpstart VPSA
+version = 7.x-1.0-alpha1
+project = stanford_jumpstart_vpsa_events_import
+dependencies[] = ctools
+dependencies[] = feeds
+features[ctools][] = feeds:feeds_importer_default:1
+features[features_api][] = api:1
+features[feeds_importer][] = student_affairs_events_import
