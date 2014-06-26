@@ -336,6 +336,17 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'create stanford_video content'.
+  $permissions['create stanford_video content'] = array(
+    'name' => 'create stanford_video content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create url aliases'.
   $permissions['create url aliases'] = array(
     'name' => 'create url aliases',
@@ -445,6 +456,16 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
   // Exported permission: 'delete any stanford_slide content'.
   $permissions['delete any stanford_slide content'] = array(
     'name' => 'delete any stanford_slide content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete any stanford_video content'.
+  $permissions['delete any stanford_video content'] = array(
+    'name' => 'delete any stanford_video content',
     'roles' => array(
       'administrator' => 'administrator',
       'site owner' => 'site owner',
@@ -564,6 +585,17 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
   // Exported permission: 'delete own stanford_slide content'.
   $permissions['delete own stanford_slide content'] = array(
     'name' => 'delete own stanford_slide content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own stanford_video content'.
+  $permissions['delete own stanford_video content'] = array(
+    'name' => 'delete own stanford_video content',
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -835,6 +867,18 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit any stanford_video content'.
+  $permissions['edit any stanford_video content'] = array(
+    'name' => 'edit any stanford_video content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'site owner' => 'site owner',
+      'student assistant' => 'student assistant',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any video files'.
   $permissions['edit any video files'] = array(
     'name' => 'edit any video files',
@@ -948,6 +992,17 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
   // Exported permission: 'edit own stanford_slide content'.
   $permissions['edit own stanford_slide content'] = array(
     'name' => 'edit own stanford_slide content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own stanford_video content'.
+  $permissions['edit own stanford_video content'] = array(
+    'name' => 'edit own stanford_video content',
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
