@@ -365,7 +365,6 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'site owner' => 'site owner',
-      'editor' => 'editor',
     ),
     'module' => 'node',
   );
