@@ -33,16 +33,11 @@ function stanford_jumpstart_vpsa_events_import_feeds_importer_default() {
           'xpathparser:0' => 'title',
           'xpathparser:1' => 'Nid',
           'xpathparser:2' => 'body',
-          'xpathparser:3' => 'date-and-time/span',
+          'xpathparser:3' => 'date-and-time',
           'xpathparser:4' => 'status',
-          'xpathparser:5' => '',
-          'xpathparser:7' => '',
-          'xpathparser:9' => '',
-          'xpathparser:10' => '',
           'xpathparser:11' => 'location',
           'xpathparser:12' => 'RSVP',
-          'xpathparser:13' => 'type-of-event',
-          'xpathparser:14' => '',
+          'xpathparser:13' => '',
           'xpathparser:15' => '',
         ),
         'rawXML' => array(
@@ -51,19 +46,14 @@ function stanford_jumpstart_vpsa_events_import_feeds_importer_default() {
           'xpathparser:2' => 0,
           'xpathparser:3' => 0,
           'xpathparser:4' => 0,
-          'xpathparser:5' => 0,
-          'xpathparser:7' => 0,
-          'xpathparser:9' => 0,
-          'xpathparser:10' => 0,
           'xpathparser:11' => 0,
           'xpathparser:12' => 0,
           'xpathparser:13' => 0,
-          'xpathparser:14' => 0,
           'xpathparser:15' => 0,
         ),
         'context' => '//nodes/node',
         'exp' => array(
-          'errors' => 1,
+          'errors' => 0,
           'debug' => array(
             'context' => 0,
             'xpathparser:0' => 0,
@@ -71,18 +61,13 @@ function stanford_jumpstart_vpsa_events_import_feeds_importer_default() {
             'xpathparser:2' => 0,
             'xpathparser:3' => 0,
             'xpathparser:4' => 0,
-            'xpathparser:5' => 0,
-            'xpathparser:7' => 0,
-            'xpathparser:9' => 0,
-            'xpathparser:10' => 0,
             'xpathparser:11' => 0,
             'xpathparser:12' => 0,
             'xpathparser:13' => 0,
-            'xpathparser:14' => 0,
             'xpathparser:15' => 0,
           ),
         ),
-        'allow_override' => 0,
+        'allow_override' => 1,
       ),
     ),
     'processor' => array(
@@ -99,7 +84,7 @@ function stanford_jumpstart_vpsa_events_import_feeds_importer_default() {
           1 => array(
             'source' => 'xpathparser:1',
             'target' => 'guid',
-            'unique' => 0,
+            'unique' => 1,
           ),
           2 => array(
             'source' => 'xpathparser:2',
@@ -117,46 +102,21 @@ function stanford_jumpstart_vpsa_events_import_feeds_importer_default() {
             'unique' => FALSE,
           ),
           5 => array(
-            'source' => 'xpathparser:5',
-            'target' => 'field_stanford_event_audience',
-            'unique' => FALSE,
-          ),
-          6 => array(
-            'source' => 'xpathparser:7',
-            'target' => 'field_stanford_event_phone',
-            'unique' => FALSE,
-          ),
-          7 => array(
-            'source' => 'xpathparser:9',
-            'target' => 'field_stanford_event_sponsor',
-            'unique' => FALSE,
-          ),
-          8 => array(
-            'source' => 'xpathparser:10',
-            'target' => 'field_stanford_event_url:url',
-            'unique' => FALSE,
-          ),
-          9 => array(
             'source' => 'xpathparser:11',
             'target' => 'field_stanford_event_location',
             'unique' => FALSE,
           ),
-          10 => array(
+          6 => array(
             'source' => 'xpathparser:12',
             'target' => 'field_stanford_event_admission',
             'unique' => FALSE,
           ),
-          11 => array(
+          7 => array(
             'source' => 'xpathparser:13',
             'target' => 'field_stanford_event_categories',
             'unique' => FALSE,
           ),
-          12 => array(
-            'source' => 'xpathparser:14',
-            'target' => 'field_stanford_event_email',
-            'unique' => FALSE,
-          ),
-          13 => array(
+          8 => array(
             'source' => 'xpathparser:15',
             'target' => 'field_stanford_event_datetime:end',
             'unique' => FALSE,
