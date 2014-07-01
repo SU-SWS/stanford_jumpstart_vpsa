@@ -136,6 +136,8 @@ function stanford_jumpstart_vpsa_workflows_user_default_permissions() {
     'name' => 'view moderation messages',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
+      'site owner' => 'site owner',
     ),
     'module' => 'workbench_moderation',
   );
