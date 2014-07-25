@@ -79,3 +79,49 @@ body #footer {
     width: 34%;
   }
 }
+
+/* Hide username and date on search results. Yea, I know. Should do
+this in the template file but that wasn't a good option in this case */
+
+li.search-result .search-info {
+  display: none;
+}
+
+/**
+ * Breakout text styles
+ */
+
+.content p.callout {
+  width: auto;
+  margin: .8em;
+}
+
+.content p.pullquote {
+  margin: .8em;
+  background: #f2f1eb;
+  border: solid 1px #d5d2c5;
+  padding: 1em;
+  line-height: 1.25em;
+  text-indent: 0;
+}
+
+.content p.bracket {
+  width: auto;
+  margin: .8em;
+}
+
+/* -------- PRINT STYLESHEETS ----------- */
+@media print {
+  #top-logo { display: none; }
+  #header #logo { display: none !important; }
+  #header #name-and-slogan { height: 15px !important; }
+  #header #name-and-slogan.with-logo { padding-left: 0px; }
+  html #header #name-and-slogan #site-name { font-size: 1em !important; }
+  #sidebar-first { display: none; }
+  #footer { display: none; }
+  .element-invisible { position: relative; clip: auto; }
+  html.js fieldset.collapsed .fieldset-wrapper { display: block; margin-bottom: 0px; }
+  html.js fieldset.collapsible .fieldset-legend { padding: 0px; margin-bottom: 0px; }
+  html.js fieldset { margin: 0px; padding: 0px; height:inherit; }
+  html.js legend { margin-bottom: 0px; line-height: 1em; font-size: 1.5em; padding: 0px; }
+}

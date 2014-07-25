@@ -12,6 +12,32 @@ function stanford_jumpstart_vpsa_wysiwyg_editor_settings_alter(&$settings, $cont
   // add editor CSS to fix overflow issue
   $editor_css = url(drupal_get_path('module', 'stanford_jumpstart_vpsa') . '/css/editor.css');
   $settings['contentsCss'][] = $editor_css;
+
+  if ($context['profile']->format == "content_editor_text_format") {
+    // Add breakout box to the style set.
+    $settings['stylesSet'][] = array(
+      'name' => t('Breakout Box Light'),
+      'element' => 'p',
+      'attributes' => array(
+        'class' => 'callout',
+      ),
+    );
+    $settings['stylesSet'][] = array(
+      'name' => t('Breakout Box Dark'),
+      'element' => 'p',
+      'attributes' => array(
+        'class' => 'pullquote',
+      ),
+    );
+    $settings['stylesSet'][] = array(
+      'name' => t('Bracket'),
+      'element' => 'p',
+      'attributes' => array(
+        'class' => 'bracket',
+      ),
+    );
+  }
+
 }
 
 
@@ -28,3 +54,4 @@ function stanford_jumpstart_vpsa_preprocess_page($variables) {
     }
   }
 }
+
