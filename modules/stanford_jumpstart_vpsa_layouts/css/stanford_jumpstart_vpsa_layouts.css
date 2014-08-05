@@ -112,16 +112,31 @@ li.search-result .search-info {
 
 /* -------- PRINT STYLESHEETS ----------- */
 @media print {
+
   #top-logo { display: none; }
   #header #logo { display: none !important; }
-  #header #name-and-slogan { height: 15px !important; }
   #header #name-and-slogan.with-logo { padding-left: 0px; }
-  html #header #name-and-slogan #site-name { font-size: 1em !important; }
-  #sidebar-first { display: none; }
+  #name-and-slogan #site-name, #name-and-slogan #site-name a, #name-and-slogan #site-slogan { font-size: 12pt !important; }
   #footer { display: none; }
   .element-invisible { position: relative; clip: auto; }
   html.js fieldset.collapsed .fieldset-wrapper { display: block; margin-bottom: 0px; }
   html.js fieldset.collapsible .fieldset-legend { padding: 0px; margin-bottom: 0px; }
   html.js fieldset { margin: 0px; padding: 0px; height:inherit; }
   html.js legend { margin-bottom: 0px; line-height: 1em; font-size: 1.5em; padding: 0px; }
+
+  @page {margin:20mm 10mm;}
+  body {margin:20mm 10mm; font-size:10pt;}
+  * {color: #000 !important;}
+  #main-menu, .logged-in .tabs, #footer, #global-footer, #global-header, #admin-shortcuts, .block-menu-block {display:none;}
+  h1.page-title {margin-top:20px; display:block; clear:both;}
+  img {max-width: 100%;}
+  a[href]:after {font-size:80%; word-wrap: break-word;}
+  p, h1, h2, h3, h4, li {page-break-after:auto; page-break-before:auto;}
+  h1, h2, h3, h4, li {page-break-inside:avoid;}
+  #header {min-height:auto; padding:0px; margin-bottom:10mm;}
+  #header a[href]:after {display:none;}
+  #sidebar-first, #content, #sidebar-second { display: block; width: 100%; }
+  #block-menu-block-stanford-jsvpsa-layouts-4, .workbench-info-block { display: none; }
+  table td, table th {border:1px solid #000;}
+
 }
