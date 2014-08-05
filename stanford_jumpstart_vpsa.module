@@ -29,13 +29,6 @@ function stanford_jumpstart_vpsa_wysiwyg_editor_settings_alter(&$settings, $cont
         'class' => 'pullquote',
       ),
     );
-    $settings['stylesSet'][] = array(
-      'name' => t('Bracket'),
-      'element' => 'p',
-      'attributes' => array(
-        'class' => 'bracket',
-      ),
-    );
   }
 
 }

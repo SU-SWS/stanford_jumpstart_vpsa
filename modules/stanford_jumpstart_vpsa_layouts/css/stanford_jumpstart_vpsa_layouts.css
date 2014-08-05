@@ -105,11 +105,6 @@ li.search-result .search-info {
   text-indent: 0;
 }
 
-.content p.bracket {
-  width: auto;
-  margin: .8em;
-}
-
 /* -------- PRINT STYLESHEETS ----------- */
 @media print {
 
