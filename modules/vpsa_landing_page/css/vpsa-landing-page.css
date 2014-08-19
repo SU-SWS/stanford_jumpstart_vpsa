@@ -41,3 +41,15 @@
 .field-name-field-v-postcard-group .content > div .group-v-postcard-col3 {
    width: 25%;
 }
+
+.node-type-vpsa-landing-page .postcard-left > div:first-child img {
+    margin-bottom: 0;
+}
+
+.page-node .content-body .field.field-name-field-v-image {
+    margin-bottom: 0;
+}
+
+.node-type-vpsa-landing-page .postcard-left .more-link {
+    display: block;
+}

@@ -10,6 +10,97 @@
 function vpsa_landing_page_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'field_collection_item-field_v_postcard_group-field_v_credits'
+  $field_instances['field_collection_item-field_v_postcard_group-field_v_credits'] = array(
+    'bundle' => 'field_v_postcard_group',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Enter the photographer or organization credits.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'custom_link_to_entity' => '',
+          'custom_prefix' => '',
+          'custom_reverse' => '',
+          'custom_strip_preserve' => '',
+          'custom_strip_tags' => '',
+          'custom_strtolower' => '',
+          'custom_strtoupper' => '',
+          'custom_suffix' => '',
+          'custom_trim' => '',
+          'custom_ucfirst' => '',
+          'custom_ucwords' => '',
+        ),
+        'type' => 'text_default',
+        'weight' => 4,
+      ),
+      'full' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'custom_link_to_entity' => '',
+          'custom_prefix' => '',
+          'custom_reverse' => '',
+          'custom_strip_preserve' => '',
+          'custom_strip_tags' => '',
+          'custom_strtolower' => '',
+          'custom_strtoupper' => '',
+          'custom_suffix' => '',
+          'custom_trim' => '',
+          'custom_ucfirst' => '',
+          'custom_ucwords' => '',
+        ),
+        'type' => 'text_default',
+        'weight' => 10,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_v_credits',
+    'label' => 'Credits',
+    'required' => 0,
+    'settings' => array(
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'content_editor_text_format' => 'content_editor_text_format',
+          'filtered_html' => 'filtered_html',
+          'full_html' => 'full_html',
+          'plain_text' => 'plain_text',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'content_editor_text_format' => array(
+              'weight' => -10,
+            ),
+            'filtered_html' => array(
+              'weight' => 0,
+            ),
+            'full_html' => array(
+              'weight' => 1,
+            ),
+            'plain_text' => array(
+              'weight' => 10,
+            ),
+          ),
+        ),
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 2,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 2,
+    ),
+  );
+
   // Exported field_instance: 'field_collection_item-field_v_postcard_group-field_v_description'
   $field_instances['field_collection_item-field_v_postcard_group-field_v_description'] = array(
     'bundle' => 'field_v_postcard_group',
@@ -97,7 +188,7 @@ function vpsa_landing_page_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -264,7 +355,7 @@ function vpsa_landing_page_field_default_field_instances() {
           'custom_ucwords' => '',
         ),
         'type' => 'link_default',
-        'weight' => 10,
+        'weight' => 14,
       ),
     ),
     'entity_type' => 'field_collection_item',
@@ -295,7 +386,7 @@ function vpsa_landing_page_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -386,7 +477,7 @@ function vpsa_landing_page_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -516,8 +607,10 @@ function vpsa_landing_page_field_default_field_instances() {
   t('Add link(s) here to other content');
   t('Body');
   t('Content Grouping');
+  t('Credits');
   t('Description');
   t('Enter some descriptive text for this content');
+  t('Enter the photographer or organization credits.');
   t('Enter the title of this group of content');
   t('Image');
   t('Link(s)');
