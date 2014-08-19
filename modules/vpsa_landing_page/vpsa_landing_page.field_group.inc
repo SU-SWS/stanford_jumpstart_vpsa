@@ -24,6 +24,7 @@ function vpsa_landing_page_field_group_info() {
     'weight' => '7',
     'children' => array(
       0 => 'field_v_image',
+      1 => 'group_v_postcard_credits',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -52,10 +53,10 @@ function vpsa_landing_page_field_group_info() {
   $field_group->parent_name = 'group_v_postcard_left';
   $field_group->data = array(
     'label' => 'Postcard Column 2',
-    'weight' => '8',
+    'weight' => '9',
     'children' => array(
-      0 => 'field_v_postcard_title',
-      1 => 'field_v_description',
+      0 => 'field_v_description',
+      1 => 'field_v_postcard_title',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -84,9 +85,9 @@ function vpsa_landing_page_field_group_info() {
   $field_group->parent_name = 'group_v_postcard_left';
   $field_group->data = array(
     'label' => 'Postcard Column 3',
-    'weight' => '9',
+    'weight' => '10',
     'children' => array(
-      0 => 'field_v_link',
+      0 => 'group_v_postcard_links',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -103,6 +104,37 @@ function vpsa_landing_page_field_group_info() {
     ),
   );
   $export['group_v_postcard_col3|field_collection_item|field_v_postcard_group|full'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_v_postcard_credits|field_collection_item|field_v_postcard_group|full';
+  $field_group->group_name = 'group_v_postcard_credits';
+  $field_group->entity_type = 'field_collection_item';
+  $field_group->bundle = 'field_v_postcard_group';
+  $field_group->mode = 'full';
+  $field_group->parent_name = 'group_v_postcard_col1';
+  $field_group->data = array(
+    'label' => 'Credits Style',
+    'weight' => '9',
+    'children' => array(
+      0 => 'field_v_credits',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Credits Style',
+      'instance_settings' => array(
+        'classes' => 'group-v-postcard-credits field-group-div credits',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_v_postcard_credits|field_collection_item|field_v_postcard_group|full'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -136,6 +168,37 @@ function vpsa_landing_page_field_group_info() {
     ),
   );
   $export['group_v_postcard_left|field_collection_item|field_v_postcard_group|full'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_v_postcard_links|field_collection_item|field_v_postcard_group|full';
+  $field_group->group_name = 'group_v_postcard_links';
+  $field_group->entity_type = 'field_collection_item';
+  $field_group->bundle = 'field_v_postcard_group';
+  $field_group->mode = 'full';
+  $field_group->parent_name = 'group_v_postcard_col3';
+  $field_group->data = array(
+    'label' => 'Links Style',
+    'weight' => '13',
+    'children' => array(
+      0 => 'field_v_link',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'label' => 'Links Style',
+      'instance_settings' => array(
+        'classes' => 'group-v-postcard-links field-group-div more-link',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'fast',
+      ),
+      'formatter' => 'open',
+    ),
+  );
+  $export['group_v_postcard_links|field_collection_item|field_v_postcard_group|full'] = $field_group;
 
   return $export;
 }
