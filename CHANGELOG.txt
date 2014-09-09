@@ -1,0 +1,8 @@
+Stanford Sites Jumpstart VPSA x.x-x.x xxxx-xx-xx
+------------------------------------------------
+
+Stanford Sites Jumpstart VPSA 7.x-4.2 2014-09-09
+------------------------------------------------
+Initial stable release.
+Versioned at 4.2 to match up with the versions of other Stanford Sites Jumpstart
+  products
