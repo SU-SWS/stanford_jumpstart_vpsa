@@ -42,7 +42,7 @@ function stanford_jumpstart_vpsa_shortcuts_permission() {
   return array(
     'stanford jumpstart clear caches' => array(
       'title' => t('Clear Site Caches'),
-      'description' => t('Provide access to the "refresh site content" (clear all caches) shortcut item.'),
+      'description' => t('Provide access to the "Clear Site Cache" shortcut item.'),
     ),
   );
 }
@@ -52,7 +52,7 @@ function stanford_jumpstart_vpsa_shortcuts_permission() {
  */
 function stanford_jumpstart_vpsa_shortcuts_menu() {
   $items['admin/stanford/jumpstart/shortcuts/clear-cache'] = array(
-    'title' => 'Refresh Site Content',
+    'title' => 'Clear Site Cache',
     'page callback' => 'stanford_jumpstart_vpsa_shortcuts_clear_all_caches',
     'access arguments' => array('stanford jumpstart clear caches'),
     'options' => array(
@@ -61,7 +61,7 @@ function stanford_jumpstart_vpsa_shortcuts_menu() {
       ),
       'attributes' => array(
         'class' => 'su-clear-cache',
-        'title' => 'Refresh Site Content',
+        'title' => "Don't see your changes? Clear your cache",
       ),
     ),
     'type' => MENU_CALLBACK,
