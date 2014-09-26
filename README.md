@@ -1,10 +1,33 @@
 #Jumpstart VPSA
-Version 7.x-4.2
+Version 7.x-4.3-alpha1
 
 This module contains code for the JSVPSA product. Current it is a container for other sub modules but will be the place for future additions outside of the installation profile.
 
 ## Modules in this module:
 
-1. **stanford_jumpstart_vpsa_layouts**
+**[Stanford Jumpstart VPSA Basic Page Import](modules/stanford_jumpstart_vpsa_basic_page_import)**
+A feeds importer specifically tuned to import basic page content from pre-existing SA websites. This is to expidite the migration process.
 
-	Contains contexts for layouts specific to this product. 
+**[Stanford Jumpstart VPSA Events Import](modules/stanford_jumpstart_vpsa_events_import)**
+A feeds importer specifically tuned to import events content from pre-existing SA websites. This is to expidite the migration process.
+
+**[Stanford Jumpstart VPSA Layouts](modules/stanford_jumpstart_vpsa_layouts)**
+A feature module containing a number of context layouts and css specific to this product.
+
+**[Stanford Jumpstart VPSA Permissions](modules/stanford_jumpstart_vpsa_permissios)**
+A feature module containing the base permissions for this product. This module is dependant on the VPSA roles module.
+
+**[Stanford Jumpstart VPSA Roles](modules/stanford_jumpstart_site_vpsa_roles)**
+A feature module contining additional roles on top of Stanford Jumpstart Roles. Contains the student assistant role.
+
+**[Stanford Jumpstart VPSA Shortcuts](modules/stanford_jumpstart_vpsa_shortcuts)**
+A jumpstart shortcuts module that currently does nothing, but like a good friend is there when you need it.
+
+**[Stanford Jumpstart VPSA Workflows](modules/stanford_jumpstart_vpsa_workflows)**
+A feature module that contains the workbench workflows for this product.
+
+**[VPSA Content Access](modules/vpsa_content_access)**
+A feature module that contains the content_access configuration settings for the content types in this product.
+
+**[VPSA Landing Page](modules/vpsa_landing_page)**
+A feature module that contains landing page content type that has a special layout.
