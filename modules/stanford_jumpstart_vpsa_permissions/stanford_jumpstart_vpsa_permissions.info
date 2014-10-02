@@ -139,6 +139,7 @@ features[user_permission][] = show format selection for node
 features[user_permission][] = show format selection for taxonomy_term
 features[user_permission][] = show format selection for user
 features[user_permission][] = stanford jumpstart clear caches
+features[user_permission][] = stanford jumpstart admin shortcuts
 features[user_permission][] = use advanced search
 features[user_permission][] = use text format content_editor_text_format
 features[user_permission][] = use text format filtered_html
