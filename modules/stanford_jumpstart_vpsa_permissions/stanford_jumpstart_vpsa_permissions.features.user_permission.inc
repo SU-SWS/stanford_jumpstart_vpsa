@@ -1193,6 +1193,18 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'module' => 'better_formats',
   );
 
+  // Exported permission: 'stanford jumpstart admin shortcuts'.
+  $permissions['stanford jumpstart admin shortcuts'] = array(
+    'name' => 'stanford jumpstart admin shortcuts',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'site owner' => 'site owner',
+      'editor' => 'editor',
+      'student assistant' => 'student assistant',
+    ),
+    'module' => 'stanford_jumpstart',
+  );
+
   // Exported permission: 'stanford jumpstart clear caches'.
   $permissions['stanford jumpstart clear caches'] = array(
     'name' => 'stanford jumpstart clear caches',
