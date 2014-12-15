@@ -1,6 +1,10 @@
 Stanford Sites Jumpstart VPSA x.x-x.x xxxx-xx-xx
 ------------------------------------------------
 
+Stanford Sites Jumpstart VPSA 7.x-4.3 2014-12-15
+------------------------------------------------
+- Let all privileged roles see the admin shortcuts menu
+
 Stanford Sites Jumpstart VPSA 7.x-4.3-alpha1 2014-09-26
 ------------------------------------------------
 
