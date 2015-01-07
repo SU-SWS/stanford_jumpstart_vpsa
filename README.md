@@ -6,10 +6,10 @@ This module contains code for the JSVPSA product. Current it is a container for 
 ## Modules in this module:
 
 **[Stanford Jumpstart VPSA Basic Page Import](modules/stanford_jumpstart_vpsa_basic_page_import)**
-A feeds importer specifically tuned to import basic page content from pre-existing SA websites. This is to expidite the migration process.
+A feeds importer specifically tuned to import basic page content from pre-existing SA websites. This is to expedite  the migration process.
 
 **[Stanford Jumpstart VPSA Events Import](modules/stanford_jumpstart_vpsa_events_import)**
-A feeds importer specifically tuned to import events content from pre-existing SA websites. This is to expidite the migration process.
+A feeds importer specifically tuned to import events content from pre-existing SA websites. This is to expedite the migration process.
 
 **[Stanford Jumpstart VPSA Layouts](modules/stanford_jumpstart_vpsa_layouts)**
 A feature module containing a number of context layouts and css specific to this product.
