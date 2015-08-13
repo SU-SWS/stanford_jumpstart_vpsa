@@ -70,30 +70,6 @@ function stanford_jumpstart_vpsa_layouts_context_default_contexts() {
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
-  $context->name = 'landing_page_content_type';
-  $context->description = 'Landing Page Content Type';
-  $context->tag = 'Landing Page Content Type';
-  $context->conditions = array(
-    'node' => array(
-      'values' => array(
-        'vpsa_landing_page' => 'vpsa_landing_page',
-      ),
-      'options' => array(
-        'node_form' => '0',
-      ),
-    ),
-  );
-  $context->reactions = array();
-  $context->condition_mode = 1;
-
-  // Translatables
-  // Included for use with string extractors like potx.
-  t('Landing Page Content Type');
-  $export['landing_page_content_type'] = $context;
-
-  $context = new stdClass();
-  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
-  $context->api_version = 3;
   $context->name = 'vpsa_all_pages_but_homepage';
   $context->description = 'VPSA All pages but the home page and landing pages';
   $context->tag = 'Sub-pages';
