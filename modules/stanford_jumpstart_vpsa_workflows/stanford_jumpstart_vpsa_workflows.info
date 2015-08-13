@@ -30,5 +30,5 @@ features[variable][] = workbench_moderation_default_state_stanford_news_item
 features[variable][] = workbench_moderation_default_state_stanford_page
 features[variable][] = workbench_moderation_default_state_stanford_slide
 features[variable][] = workbench_moderation_default_state_stanford_video
-features[variable][] = workbench_moderation_default_state_vpsa_landing_page
+features[variable][] = workbench_moderation_default_state_stanford_landing_page
 files[] = stanford_jumpstart_vpsa_workflows.install
