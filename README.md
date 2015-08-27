@@ -1,5 +1,5 @@
 #Jumpstart VPSA
-Version 7.x-4.3
+Version 7.x-4.x
 
 This module contains code for the JSVPSA product. Current it is a container for other sub modules but will be the place for future additions outside of the installation profile.
 
