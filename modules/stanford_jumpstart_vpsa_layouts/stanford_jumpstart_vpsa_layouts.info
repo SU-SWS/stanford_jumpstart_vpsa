@@ -3,7 +3,7 @@ description = Contexts, Menus, and Menu Block variables associated with Stanford
 core = 7.x
 package = Stanford Jumpstart VPSA
 php = 5.3
-version = 7.x-4.2
+version = 7.x-4.x
 dependencies[] = bean
 dependencies[] = block
 dependencies[] = context
@@ -24,4 +24,4 @@ stylesheets[all][] = css/stanford_jumpstart_vpsa_layouts.css
 
 
 
-  
+
