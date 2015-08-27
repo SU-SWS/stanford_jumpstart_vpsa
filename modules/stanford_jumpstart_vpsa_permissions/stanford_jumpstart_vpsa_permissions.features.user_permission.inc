@@ -242,15 +242,6 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: 'create article content'.
-  $permissions['create article content'] = array(
-    'name' => 'create article content',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'create files'.
   $permissions['create files'] = array(
     'name' => 'create files',
@@ -260,15 +251,6 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
       'site owner' => 'site owner',
     ),
     'module' => 'file_entity',
-  );
-
-  // Exported permission: 'create page content'.
-  $permissions['create page content'] = array(
-    'name' => 'create page content',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
   );
 
   // Exported permission: 'create stanford_event content'.
@@ -357,21 +339,12 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'module' => 'path',
   );
 
-  // Exported permission: 'create vpsa_landing_page content'.
-  $permissions['create vpsa_landing_page content'] = array(
-    'name' => 'create vpsa_landing_page content',
+  // Exported permission: 'create stanford_landing_page content'.
+  $permissions['create stanford_landing_page content'] = array(
+    'name' => 'create stanford_landing_page content',
     'roles' => array(
       'administrator' => 'administrator',
       'site owner' => 'site owner',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete any article content'.
-  $permissions['delete any article content'] = array(
-    'name' => 'delete any article content',
-    'roles' => array(
-      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -401,15 +374,6 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
-  );
-
-  // Exported permission: 'delete any page content'.
-  $permissions['delete any page content'] = array(
-    'name' => 'delete any page content',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
   );
 
   // Exported permission: 'delete any stanford_event content'.
@@ -491,22 +455,13 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'module' => 'file_entity',
   );
 
-  // Exported permission: 'delete any vpsa_landing_page content'.
-  $permissions['delete any vpsa_landing_page content'] = array(
-    'name' => 'delete any vpsa_landing_page content',
+  // Exported permission: 'delete any stanford_landing_page content'.
+  $permissions['delete any stanford_landing_page content'] = array(
+    'name' => 'delete any stanford_landing_page content',
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
       'site owner' => 'site owner',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete own article content'.
-  $permissions['delete own article content'] = array(
-    'name' => 'delete own article content',
-    'roles' => array(
-      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -536,15 +491,6 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
-  );
-
-  // Exported permission: 'delete own page content'.
-  $permissions['delete own page content'] = array(
-    'name' => 'delete own page content',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
   );
 
   // Exported permission: 'delete own stanford_event content'.
@@ -632,9 +578,9 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'module' => 'file_entity',
   );
 
-  // Exported permission: 'delete own vpsa_landing_page content'.
-  $permissions['delete own vpsa_landing_page content'] = array(
-    'name' => 'delete own vpsa_landing_page content',
+  // Exported permission: 'delete own stanford_landing_page content'.
+  $permissions['delete own stanford_landing_page content'] = array(
+    'name' => 'delete own stanford_landing_page content',
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -783,26 +729,6 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'module' => 'file_entity',
   );
 
-  // Exported permission: 'ds_switch stanford_person'.
-  $permissions['ds_switch stanford_person'] = array(
-    'name' => 'ds_switch stanford_person',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-      'site owner' => 'site owner',
-    ),
-    'module' => 'ds_extras',
-  );
-
-  // Exported permission: 'edit any article content'.
-  $permissions['edit any article content'] = array(
-    'name' => 'edit any article content',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'edit any audio files'.
   $permissions['edit any audio files'] = array(
     'name' => 'edit any audio files',
@@ -828,15 +754,6 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
-  );
-
-  // Exported permission: 'edit any page content'.
-  $permissions['edit any page content'] = array(
-    'name' => 'edit any page content',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
   );
 
   // Exported permission: 'edit any stanford_event content'.
@@ -929,23 +846,14 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'module' => 'file_entity',
   );
 
-  // Exported permission: 'edit any vpsa_landing_page content'.
-  $permissions['edit any vpsa_landing_page content'] = array(
-    'name' => 'edit any vpsa_landing_page content',
+  // Exported permission: 'edit any stanford_landing_page content'.
+  $permissions['edit any stanford_landing_page content'] = array(
+    'name' => 'edit any stanford_landing_page content',
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
       'site owner' => 'site owner',
       'student assistant' => 'student assistant',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit own article content'.
-  $permissions['edit own article content'] = array(
-    'name' => 'edit own article content',
-    'roles' => array(
-      'administrator' => 'administrator',
     ),
     'module' => 'node',
   );
@@ -975,15 +883,6 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'file_entity',
-  );
-
-  // Exported permission: 'edit own page content'.
-  $permissions['edit own page content'] = array(
-    'name' => 'edit own page content',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'node',
   );
 
   // Exported permission: 'edit own stanford_event content'.
@@ -1072,9 +971,9 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'module' => 'file_entity',
   );
 
-  // Exported permission: 'edit own vpsa_landing_page content'.
-  $permissions['edit own vpsa_landing_page content'] = array(
-    'name' => 'edit own vpsa_landing_page content',
+  // Exported permission: 'edit own stanford_landing_page content'.
+  $permissions['edit own stanford_landing_page content'] = array(
+    'name' => 'edit own stanford_landing_page content',
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
