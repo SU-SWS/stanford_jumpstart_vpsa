@@ -21,7 +21,7 @@ A feature module containing the base permissions for this product. This module i
 A feature module contining additional roles on top of Stanford Jumpstart Roles. Contains the student assistant role.
 
 **[Stanford Jumpstart VPSA Shortcuts](modules/stanford_jumpstart_vpsa_shortcuts)**
-A jumpstart shortcuts module that currently does nothing, but like a good friend is there when you need it.
+A jumpstart shortcuts module that orders the shortcuts for VPSA specific weights.
 
 **[Stanford Jumpstart VPSA Workflows](modules/stanford_jumpstart_vpsa_workflows)**
 A feature module that contains the workbench workflows for this product.
