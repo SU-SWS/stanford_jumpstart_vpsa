@@ -97,6 +97,7 @@ features[user_permission][] = download own audio files
 features[user_permission][] = download own document files
 features[user_permission][] = download own image files
 features[user_permission][] = download own video files
+features[user_permission][] = ds_switch stanford_person
 features[user_permission][] = edit any audio files
 features[user_permission][] = edit any document files
 features[user_permission][] = edit any image files
