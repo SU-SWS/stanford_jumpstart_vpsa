@@ -338,6 +338,16 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'create stanford_gallery content'.
+  $permissions['create stanford_gallery content'] = array(
+    'name' => 'create stanford_gallery content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create url aliases'.
   $permissions['create url aliases'] = array(
     'name' => 'create url aliases',
@@ -449,6 +459,16 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
   // Exported permission: 'delete any stanford_video content'.
   $permissions['delete any stanford_video content'] = array(
     'name' => 'delete any stanford_video content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete any stanford_gallery content'.
+  $permissions['delete any stanford_gallery content'] = array(
+    'name' => 'delete any stanford_gallery content',
     'roles' => array(
       'administrator' => 'administrator',
       'site owner' => 'site owner',
@@ -861,6 +881,18 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit any stanford_gallery content'.
+  $permissions['edit any stanford_gallery content'] = array(
+    'name' => 'edit any stanford_gallery content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'site owner' => 'site owner',
+      'student assistant' => 'student assistant',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any video files'.
   $permissions['edit any video files'] = array(
     'name' => 'edit any video files',
@@ -982,6 +1014,18 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
       'administrator' => 'administrator',
       'editor' => 'editor',
       'site owner' => 'site owner',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own stanford_gallery content'.
+  $permissions['edit own stanford_gallery content'] = array(
+    'name' => 'edit own stanford_gallery content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'site owner' => 'site owner',
+      'student assistant' => 'student assistant',
     ),
     'module' => 'node',
   );
