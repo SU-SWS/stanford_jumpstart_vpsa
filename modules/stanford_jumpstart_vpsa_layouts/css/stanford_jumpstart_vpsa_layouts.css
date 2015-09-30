@@ -1,10 +1,11 @@
 /* global VPSA */
+/* COMMENT - This looks bad. Change to a different color? */
 body hr {
   border-top: 1px solid #8C1515;
 }
 
 /* Change descriptor class into summary styles on News and Events nodes */
-
+/* COMMENT - probably ok */
 .node-type-stanford-event #node_stanford_event_full_group_descriptor_info.descriptor,
 .node-type-stanford-news-item #node_stanford_news_item_full_group_descriptor_info.descriptor {
   margin-bottom: 15px;
@@ -17,7 +18,7 @@ body hr {
 }
 
 /* Preservce descriptor on the news categories */
-
+/* COMMENT - probably ok */
 .node-stanford-news-item .field-name-field-s-news-categories {
   text-transform: uppercase;
   letter-spacing: .04em;
@@ -28,15 +29,17 @@ body hr {
 }
 
 /* Special styles for the VPSA footer block */
-
+/* COMMENT - remove */
 body #footer {
   background: #f2f1eb;
 }
 
+/* COMMENT - this has to change now that this block is different */
 #block-bean-vpsa-student-affairs-block div.summary {
   padding-top: 5px;
 }
 
+/* COMMENT - this looks bad - make this match new theme styles / remove */
 #block-bean-vpsa-helpful-links-footer-block .field-type-link-field div a.more-link {
   font-weight: normal;
   text-transform: none;
@@ -45,35 +48,35 @@ body #footer {
   margin: 0px;
   line-height: 1.4em;
 }
-
 #block-bean-vpsa-helpful-links-footer-block .field-type-link-field div a.more-link:after {
   content: '';
 }
 
 /* Homepage styles to make the layout work */
-
+/* COMMENT - remove */
 .front #content-body .block-views.span12 h2 {
   background-color: #f2f1eb;
   padding:10px;
   margin-bottom:0;
   border-bottom: #d5d2c5 1px solid;
 }
-
+/* COMMENT - remove */
 .front #content-body .block-views.span12 .view-content, .front #content-body .block-views.span12 .more-link {
   padding: 0 10px
 }
 
 /* updating calendar month and day titles to match homepage h2 styles */
+/* COMMENT - remove */
 .view-stanford-events-calendar .date-nav-wrapper {
   border-bottom: #d5d2c5 1px solid;
 }
-
+/* COMMENT - what is this block? */
 .block-stanford-jumpstart-vpsa-shortcuts {
   float: right;
 }
 
 /* tweaks to Carousel to adjust for 12 column width */
-
+/* COMMENT - remove */
 @media (max-width: 1199px) and (min-width: 979px) {
   .view.carousel .carousel-block .carousel-caption {
     width: 34%;
@@ -82,7 +85,7 @@ body #footer {
 
 /* Hide username and date on search results. Yea, I know. Should do
 this in the template file but that wasn't a good option in this case */
-
+/* COMMENT - ok */
 li.search-result .search-info {
   display: none;
 }
@@ -90,12 +93,11 @@ li.search-result .search-info {
 /**
  * Breakout text styles
  */
-
+/* COMMENT - what are these used for? are they used? are they in the WYSIWYG? */
 .content p.callout {
   width: auto;
   margin: .8em;
 }
-
 .content p.pullquote {
   margin: .8em;
   background: #f2f1eb;

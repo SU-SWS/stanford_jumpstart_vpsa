@@ -1,6 +1,7 @@
 /* general VPSA product styles here */
 
 /* univseral image borders */
+/* COMMENT - check if this is working right. */
 .main .content img {
   background-color: #e9e6df;
   -moz-box-sizing: border-box;
