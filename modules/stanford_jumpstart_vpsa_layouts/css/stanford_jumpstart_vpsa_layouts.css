@@ -27,18 +27,19 @@ body hr {
   font-weight: normal;
 }
 
-/* COMMENT - this has to change now that this block is different */
+/* VPSA footer */
 #block-bean-vpsa-student-affairs-block div.summary {
   padding-top: 5px;
+  font-size: 20px;
 }
-
-/* COMMENT - this looks bad - make this match new theme styles / remove */
-#block-bean-vpsa-helpful-links-footer-block .field-type-link-field div a.more-link {
+#footer a, #footer a.more-link {
   font-weight: normal;
-  text-transform: none;
-  font-size: 1.0em;
-  border-bottom: dotted 1px #827252;
-  margin: 0px;
+}
+#footer a.more-link:hover, #footer a.more-link:focus {
+  text-decoration: underline;
+}
+#block-bean-vpsa-helpful-links-footer-block .field-type-link-field div a.more-link {
+  font-size: 1em;
   line-height: 1.4em;
 }
 #block-bean-vpsa-helpful-links-footer-block .field-type-link-field div a.more-link:after {
