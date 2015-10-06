@@ -18,7 +18,9 @@
 }
 
 .main .content .no-border img,
-.main .well .content .no-border img {
+.main .well .content .no-border img, 
+.main .content .view img,
+.main .content .tile img {
   background-color: none;
   padding: 0;
   -moz-box-shadow: none;
