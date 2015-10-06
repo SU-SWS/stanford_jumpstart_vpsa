@@ -33,6 +33,112 @@ body hr {
   border-top: 1px solid #DEDBD3;
 }
 
+/* -------- Homepage layouts ------------- */
+
+/* homepage sidebar width */
+.front.one-sidebar .sidebar.span3 {
+  width: 370px;
+}
+.front.one-sidebar .mc-content.span9 {
+  width: 770px;
+}
+@media (max-width: 1199px) {
+  .front.one-sidebar .sidebar.span3 {
+    width: 300px;
+  }
+  .front.one-sidebar .mc-content.span9 {
+    width: 620px;
+  }
+}
+@media (max-width: 979px) {
+  .front.one-sidebar .sidebar.span3 {
+    width: 228px;
+  }
+  .front.one-sidebar .mc-content.span9 {
+    width: 476px;
+  }
+}
+@media (max-width: 767px) {
+  .front.one-sidebar .sidebar.span3 {
+    width: 100%;
+  }
+  .front.one-sidebar .mc-content.span9 {
+    width: 100%;
+  }
+  /* fix for OFW */
+  .site-sidebar-first .block.well:nth-child(2n+1), .site-sidebar-second .block.well:nth-child(2n+1) {
+      margin-right: 2%;
+  }
+}
+
+/* full width banner beans */
+.fullwidth .view-mode-stanford-full-width-banner-short img {
+  width: 100%;
+}
+
+/* storytelling blocks */
+.block.storytelling {
+  font-size: 1.5em;
+    line-height: 1.4em;
+    margin-bottom: 80px;
+    margin-top: 20px;
+    padding: 0 10%;
+    text-align: center;
+}
+.block.storytelling h2 {
+  font-weight: 300;
+}
+
+@media (max-width: 767px) {
+  .block.storytelling.span12 {
+    width: 100%;
+  }
+  .block.storytelling {
+    padding: 0;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .block.storytelling {
+    font-size: 1.3em;
+  }
+}
+
+/* social media blocks centered */
+#block-bean-jumpstart-footer-social-media-0.span12 {
+  text-align: center;
+  margin-bottom: 3em;
+    margin-top: 1em;
+}
+#block-bean-jumpstart-footer-social-media-0.span12 h2,
+.content-body #block-bean-jumpstart-footer-social-media-0 h2 {
+  display: inline-block;
+    margin-bottom: 0;
+    margin-right: 10px;
+    margin-top: 0.25em;
+    vertical-align: top;
+}
+#block-bean-jumpstart-footer-social-media-0.span12 .content,
+.content-body #block-bean-jumpstart-footer-social-media-0 .content {
+  display: inline-block;
+    vertical-align: top;
+}
+#block-bean-jumpstart-footer-social-media-0.span12 .content .field,
+.content-body #block-bean-jumpstart-footer-social-media-0 .content .field {
+  display: inline-block;
+}
+
+/* Color blocks */
+.block.well.well-green {
+  background: #def1ee;
+}
+.block.well.well-purple {
+  background: #e3e9f1;
+}
+
+
+
 /* Change descriptor class into summary styles on News and Events nodes */
 /* COMMENT - probably ok */
 .node-type-stanford-event #node_stanford_event_full_group_descriptor_info.descriptor,
