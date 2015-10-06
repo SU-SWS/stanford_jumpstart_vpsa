@@ -7,5 +7,5 @@ version = 7.x-4.x
 project = stanford_jumpstart_vpsa
 project status url = https://github.com/SU-SWS/stanford_jumpstart_vpsa
 dependencies[] = stanford_jumpstart
-; stylesheets[all][] = css/stanford_jumpstart_vpsa.css
+stylesheets[all][] = css/stanford_jumpstart_vpsa.css
 
