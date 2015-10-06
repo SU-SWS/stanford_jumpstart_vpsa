@@ -100,7 +100,7 @@ function stanford_jumpstart_vpsa_layouts_context_default_contexts() {
         'bean-full-width-banner-short' => array(
           'module' => 'bean',
           'delta' => 'full-width-banner-short',
-          'region' => 'fullwidth',
+          'region' => 'fullwidth_top',
           'weight' => '-10',
         ),
         'bean-vpsa-large-about-block' => array(
@@ -169,7 +169,7 @@ function stanford_jumpstart_vpsa_layouts_context_default_contexts() {
         'bean-full-width-banner-short' => array(
           'module' => 'bean',
           'delta' => 'full-width-banner-short',
-          'region' => 'fullwidth',
+          'region' => 'fullwidth_top',
           'weight' => '-10',
         ),
         'bean-vpsa-large-about-block' => array(
@@ -232,7 +232,7 @@ function stanford_jumpstart_vpsa_layouts_context_default_contexts() {
         'bean-full-width-banner-short' => array(
           'module' => 'bean',
           'delta' => 'full-width-banner-short',
-          'region' => 'fullwidth',
+          'region' => 'fullwidth_top',
           'weight' => '-10',
         ),
         'bean-vpsa-story-telling-block' => array(
@@ -295,7 +295,7 @@ function stanford_jumpstart_vpsa_layouts_context_default_contexts() {
         'bean-full-width-banner-short' => array(
           'module' => 'bean',
           'delta' => 'full-width-banner-short',
-          'region' => 'fullwidth',
+          'region' => 'fullwidth_top',
           'weight' => '-10',
         ),
         'bean-vpsa-story-telling-block' => array(
