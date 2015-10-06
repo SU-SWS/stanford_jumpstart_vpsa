@@ -46,11 +46,6 @@ body hr {
   content: '';
 }
 
-/* COMMENT - what is this block? */
-.block-stanford-jumpstart-vpsa-shortcuts {
-  float: right;
-}
-
 /* Hide username and date on search results. Yea, I know. Should do
 this in the template file but that wasn't a good option in this case */
 /* COMMENT - ok */
