@@ -1,7 +1,6 @@
 /* general VPSA product styles here */
 
 /* univseral image borders */
-/* COMMENT - check if this is working right. */
 .main .content img {
   background-color: #e9e6df;
   -moz-box-sizing: border-box;
@@ -140,7 +139,6 @@ body hr {
 
 
 /* Change descriptor class into summary styles on News and Events nodes */
-/* COMMENT - probably ok */
 .node-type-stanford-event #node_stanford_event_full_group_descriptor_info.descriptor,
 .node-type-stanford-news-item #node_stanford_news_item_full_group_descriptor_info.descriptor {
   margin-bottom: 15px;
@@ -153,7 +151,6 @@ body hr {
 }
 
 /* Preservce descriptor on the news categories */
-/* COMMENT - probably ok */
 .node-stanford-news-item .field-name-field-s-news-categories {
   text-transform: uppercase;
   letter-spacing: .04em;
@@ -184,7 +181,6 @@ body hr {
 
 /* Hide username and date on search results. Yea, I know. Should do
 this in the template file but that wasn't a good option in this case */
-/* COMMENT - ok */
 li.search-result .search-info {
   display: none;
 }
