@@ -1,5 +1,6 @@
 Stanford Sites Jumpstart VPSA x.x-x.x xxxx-xx-xx
 ------------------------------------------------
+- Added code climate settings.
 
 Stanford Sites Jumpstart VPSA 7.x-4.3 2014-12-15
 ------------------------------------------------
