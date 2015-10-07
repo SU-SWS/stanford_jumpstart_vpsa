@@ -3,7 +3,17 @@
  * @file
  * This is for all things custom with Jumpstart VPSA
  */
-
+ 
+    function RalldyBadNameIsThisBecauseItIsfua_toGet_the_dcode_chekers(&$b) {
+          $varname = "";
+          if($varname = TRUE) {
+              $new = "THIS";
+            }
+          else
+          {
+         $fas = FALSE;  
+        }
+       }
 /**
  * Implements hook_wysiwyg_editor_settings_alter().
  */
