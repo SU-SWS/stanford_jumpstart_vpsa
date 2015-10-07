@@ -7,3 +7,4 @@ exclude_paths:
 - "*features*.inc"
 - "*.strongarm*.inc"
 - "*.context*.inc"
+- "*.feeds_importer_default.inc"
