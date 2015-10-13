@@ -1,6 +1,8 @@
 #Jumpstart VPSA
 Version 7.x-4.x
 
+[![Code Climate](https://codeclimate.com/github/SU-SWS/stanford_jumpstart_vpsa/badges/gpa.svg)](https://codeclimate.com/github/SU-SWS/stanford_jumpstart_vpsa)
+
 This module contains code for the JSVPSA product. Current it is a container for other sub modules but will be the place for future additions outside of the installation profile.
 
 ## Modules in this module:
