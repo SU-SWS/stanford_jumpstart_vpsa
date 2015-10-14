@@ -15,7 +15,6 @@ dependencies[] = stanford_jumpstart
 dependencies[] = stanford_page
 dependencies[] = views
 dependencies[] = webauth
-stylesheets[all][] = css/stanford_jumpstart_vpsa_layouts.css
 features[context][] = vpsa_all_pages_but_homepage
 features[context][] = vpsa_events_related
 features[context][] = vpsa_homepage_dickinson
