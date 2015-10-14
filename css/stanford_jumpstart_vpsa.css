@@ -515,7 +515,6 @@ li.search-result .search-info {
 
 /* background image */
 body.view-mode-stanford-huge-landscape {
-    background-image: url("https://sites.stanford.edu/sa-jumpstart/sites/default/files/styles/huge-landscape/public/jarreau-bowen-120914-265-web.jpg?itok=yRvio9nE");
     background-position: calc(100% - 150px) 180px;
     background-repeat: no-repeat;
     background-size: cover;
