@@ -593,6 +593,11 @@ body.view-mode-stanford-huge-landscape:after {
 }
 
 /* responsive styles for positioning the background image */
+@media (min-width: 1980px) {
+    body.view-mode-stanford-huge-landscape:after {
+        width: 53%;
+    }
+}
 @media (min-width: 1150px) {
     body.view-mode-stanford-huge-landscape {
         background-position: calc(100% - 300px) 180px;
