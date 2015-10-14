@@ -1,26 +1,736 @@
 /* general VPSA product styles here */
 
+
 /* univseral image borders */
+
 .main .content img {
-  background-color: #e9e6df;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin-bottom: 10px;
-  padding: 6px;
-  -moz-box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.08);
-  -webkit-box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.08);
-  box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.08);
+    background-color: #e9e6df;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding: 6px;
+    -moz-box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.08);
+    -webkit-box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.08);
 }
+
 .main .well .content img {
-  background-color: #f4f2ef;
+    background-color: #f4f2ef;
 }
 
 .main .content .no-border img,
-.main .well .content .no-border img {
-  background-color: none;
-  padding: 0;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+.main .well .content .no-border img,
+.main .content .view img,
+.main .content .tile img {
+    background-color: none;
+    padding: 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+
+/* global VPSA */
+
+body hr {
+    border-top: 1px solid #DEDBD3;
+}
+
+
+/* -------- Homepage layouts ------------- */
+
+
+/* homepage sidebar width */
+
+.front.one-sidebar .sidebar.span3 {
+    width: 370px;
+}
+
+.front.one-sidebar .mc-content.span9 {
+    width: 770px;
+}
+
+@media (max-width: 1199px) {
+    .front.one-sidebar .sidebar.span3 {
+        width: 300px;
+    }
+    .front.one-sidebar .mc-content.span9 {
+        width: 620px;
+    }
+}
+
+@media (max-width: 979px) {
+    .front.one-sidebar .sidebar.span3 {
+        width: 228px;
+    }
+    .front.one-sidebar .mc-content.span9 {
+        width: 476px;
+    }
+}
+
+@media (max-width: 767px) {
+    .front.one-sidebar .sidebar.span3 {
+        width: 100%;
+    }
+    .front.one-sidebar .mc-content.span9 {
+        width: 100%;
+    }
+    /* fix for OFW */
+    .site-sidebar-first .block.well:nth-child(2n+1),
+    .site-sidebar-second .block.well:nth-child(2n+1) {
+        margin-right: 2%;
+    }
+}
+
+
+/* full width banner beans */
+
+.fullwidth .view-mode-stanford-full-width-banner-short img {
+    width: 100%;
+}
+
+
+/* storytelling blocks */
+
+.block.storytelling {
+    font-size: 1.5em;
+    line-height: 1.4em;
+    margin-bottom: 80px;
+    margin-top: 20px;
+    padding: 0 10%;
+    text-align: center;
+}
+
+.block.storytelling h2 {
+    font-weight: 300;
+}
+
+@media (max-width: 767px) {
+    .block.storytelling.span12 {
+        width: 100%;
+    }
+    .block.storytelling {
+        padding: 0;
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .block.storytelling {
+        font-size: 1.3em;
+    }
+}
+
+
+/* social media blocks centered */
+
+#block-bean-jumpstart-footer-social-media-0.span12 {
+    text-align: center;
+    margin-bottom: 3em;
+    margin-top: 1em;
+}
+
+.content-body #block-bean-jumpstart-footer-social-media-0.span12 {
+    text-align: left;
+}
+
+#block-bean-jumpstart-footer-social-media-0.span12 h2,
+.content-body #block-bean-jumpstart-footer-social-media-0 h2 {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 10px;
+    margin-top: 0.25em;
+    vertical-align: top;
+}
+
+#block-bean-jumpstart-footer-social-media-0.span12 .content,
+.content-body #block-bean-jumpstart-footer-social-media-0 .content {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#block-bean-jumpstart-footer-social-media-0.span12 .content .field,
+.content-body #block-bean-jumpstart-footer-social-media-0 .content .field {
+    display: inline-block;
+}
+
+
+/* Color blocks */
+
+.block.well.well-green {
+    background: #def1ee;
+}
+
+.block.well.well-purple {
+    background: #e3e9f1;
+}
+
+
+/* Change descriptor class into summary styles on News and Events nodes */
+
+.node-type-stanford-event #node_stanford_event_full_group_descriptor_info.descriptor,
+.node-type-stanford-news-item #node_stanford_news_item_full_group_descriptor_info.descriptor {
+    margin-bottom: 15px;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 1.4em;
+    text-transform: none;
+    letter-spacing: normal;
+    color: #333;
+}
+
+
+/* Preservce descriptor on the news categories */
+
+.node-stanford-news-item .field-name-field-s-news-categories {
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    font-size: 12px;
+    line-height: 1.5em;
+    color: #585754;
+    font-weight: normal;
+}
+
+
+/* VPSA footer */
+
+#block-bean-vpsa-student-affairs-block div.summary {
+    padding-top: 5px;
+    font-size: 20px;
+}
+
+#footer a,
+#footer a.more-link {
+    font-weight: normal;
+}
+
+#footer a.more-link:hover,
+#footer a.more-link:focus {
+    text-decoration: underline;
+}
+
+#block-bean-vpsa-helpful-links-footer-block .field-type-link-field div a.more-link {
+    font-size: 1em;
+    line-height: 1.4em;
+}
+
+#block-bean-vpsa-helpful-links-footer-block .field-type-link-field div a.more-link:after {
+    content: '';
+}
+
+
+/* Hide username and date on search results. Yea, I know. Should do
+this in the template file but that wasn't a good option in this case */
+
+li.search-result .search-info {
+    display: none;
+}
+
+
+/**
+ * Breakout text styles
+ */
+
+.content p.callout {
+    width: auto;
+    margin: .8em;
+}
+
+.content p.pullquote {
+    margin: .8em;
+    background: #f2f1eb;
+    border: solid 1px #d5d2c5;
+    padding: 1em;
+    line-height: 1.25em;
+    text-indent: 0;
+}
+
+
+/* enabling images with captions */
+
+.float-right,
+.float-left {
+    max-width: 40%;
+    font-style: italic;
+    letter-spacing: 0.01em;
+    color: #928b81;
+    ont-size: 0.8em;
+}
+
+.float-left {
+    margin-left: 30px;
+}
+
+.float-right img,
+.float-left img {
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    .row-fluid .node .content .float-right,
+    .row-fluid .node .content .float-left {
+        max-width: 100%;
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+
+/* -------- PERSON STYLES --------------- */
+
+
+/* ------- PEOPLE VIEW ----------------------------- */
+
+.view-stanford-person-vpsa .views-row {
+    background: #f2f1eb;
+    border-radius: 3px;
+}
+
+.main .view-stanford-person-vpsa .person-image img {
+    background-color: none;
+    padding: 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 3px 3px 0 0;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.view-stanford-person-vpsa .person-details {
+    padding: 0;
+}
+
+.view-stanford-person-vpsa .person-details > * {
+    padding: 0 20px;
+}
+
+.view-stanford-person-vpsa h3 {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.view-stanford-person-vpsa .summary {
+    font-size: 1.1em;
+}
+
+.view-stanford-person-vpsa .details {
+    font-size: 0.9em;
+    line-height: 1.3em;
+    margin-bottom: 1em;
+}
+
+.view-stanford-person-vpsa .descriptor {
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+.view-stanford-person-vpsa a.btn {
+    background: #5f574f none repeat scroll 0 0;
+    font-size: 0.9em;
+    padding: 0.25em 1em;
+    margin: 0 20px 20px 20px;
+}
+
+.view-stanford-person-vpsa a.btn:hover,
+.view-stanford-person-vpsa a.btn:focus {
+    background: #2e2d29;
+}
+
+.view-stanford-person-vpsa a.btn:after {
+    content: " »";
+}
+
+.view-stanford-person-vpsa .person-details:before {
+    background-image: -webkit-gradient(linear, to bottom, to top, color-stop(0%, rgba(242, 241, 245, 0)), color-stop(100%, #f2f1eb));
+    background-image: -webkit-linear-gradient(to bottom, rgba(242, 241, 245, 0), #f2f1eb);
+    background-image: -moz-linear-gradient(to bottom, rgba(242, 241, 245, 0), #f2f1eb);
+    background-image: -o-linear-gradient(to bottom, rgba(242, 241, 245, 0), #f2f1eb);
+    background-image: linear-gradient(to bottom, rgba(242, 241, 245, 0), #f2f1eb);
+    content: "";
+    display: block;
+    height: 40px;
+    margin-top: -40px;
+    position: relative;
+    width: 100%;
+}
+
+
+/* ------- PEOPLE NODES ----------------------------- */
+
+
+/* default image styles */
+
+.node-type-stanford-person .view-mode-default {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+
+/* field styles */
+
+.node-type-stanford-person .content-body .field-name-field-s-person-title,
+.node-type-stanford-person .field-name-field-s-person-title {
+    font-size: 1.5em;
+    line-height: 1.3em;
+    margin-bottom: 0.25em;
+}
+
+.node-type-stanford-person .content-body .field-name-field-s-person-department {
+    margin-bottom: 0.25em;
+}
+
+.node-type-stanford-person .content-body .field-name-field-s-person-school {
+    margin-bottom: 0.25em;
+}
+
+.node-type-stanford-person .content-body .descriptor {
+    margin-bottom: 1.5em;
+}
+
+.node-type-stanford-person .content-body .descriptor .field {
+    margin-bottom: 0.25em;
+}
+
+
+/* social media links */
+
+.page-node.node-type-stanford-person .content-body .social-links .field {
+    margin-bottom: 0;
+}
+
+.node-type-stanford-person .social-links {
+    display: block;
+    clear: both;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.node-type-stanford-person .social-links div {
+    display: inline-block;
+}
+
+.node-type-stanford-person .social-links a {
+    color: transparent;
+    display: inline-block;
+    float: left;
+    font-size: 0;
+    height: 48px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    opacity: 0.75;
+    width: 48px;
+}
+
+.node-type-stanford-person .social-links a:hover,
+.node-type-stanford-person .social-links a:focus {
+    opacity: 1;
+}
+
+.node-type-stanford-person .field-name-field-s-person-twitter a {
+    background-image: url("../../../../sites/default/modules/stanford/stanford_bean_types/images/twitter.png");
+}
+
+.node-type-stanford-person .field-name-field-s-person-facebook a {
+    background-image: url("../../../../sites/default/modules/stanford/stanford_bean_types/images/facebook.png");
+}
+
+.node-type-stanford-person .field-name-field-s-person-linkedin a {
+    background-image: url("../../../../sites/default/modules/stanford/stanford_bean_types/images/linkedin.png");
+}
+
+.node-type-stanford-person .field-name-field-s-person-instagram a {
+    background-image: url("../../../../sites/default/modules/stanford/stanford_bean_types/images/instagram.png");
+}
+
+.node-type-stanford-person .field-name-field-s-person-vimeo a {
+    background-image: url("../../../../sites/default/modules/stanford/stanford_bean_types/images/vimeo.png");
+}
+
+.node-type-stanford-person .field-name-field-s-person-youtube a {
+    background-image: url("../../../../sites/default/modules/stanford/stanford_bean_types/images/youtube.png");
+}
+
+.node-type-stanford-person .field-name-field-s-person-tumblr a {
+    background-image: url("../../../../sites/default/modules/stanford/stanford_bean_types/images/tumblr.png");
+}
+
+.node-type-stanford-person .field-name-field-s-person-flickr a {
+    background-image: url("../../../../sites/default/modules/stanford/stanford_bean_types/images/flickr.png");
+}
+
+.node-type-stanford-person .field-name-field-s-person-pinterest a {
+    background-image: url("../../../../sites/default/modules/stanford/stanford_bean_types/images/pinterest.png");
+}
+
+.node-type-stanford-person .field-name-field-s-person-googleplus a {
+    background-image: url("../../../../sites/default/modules/stanford/stanford_bean_types/images/google.png");
+}
+
+
+/* ---------- full-width image styles -------- */
+
+/* make the tabs readable */
+.logged-in .content-head {
+    background: #fbfbf9;
+}
+
+/* positioning the text */
+.view-mode-stanford-huge-landscape .content-body .postcard {
+    background: #fbfbf9;
+    box-sizing: border-box;
+    float: right;
+    position: relative;
+    width: 37%;
+}
+.view-mode-stanford-huge-landscape .content-body .postcard-content {
+    padding: 30px 0 30px 30px;
+}
+
+/* hide the image by default */
+.view-mode-stanford-huge-landscape .content-body .postcard-image {
+    display: none;
+}
+
+/* stripping out margins for full-bleed effect */
+.view-mode-stanford-huge-landscape .main {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: transparent;
+}
+.view-mode-stanford-huge-landscape .content-head {
+    margin-bottom: 0;
+}
+.view-mode-stanford-huge-landscape #content.span12 {
+    min-height: 0;
+    margin-bottom: 0;
+}
+
+/* background image */
+body.view-mode-stanford-huge-landscape {
+    background-position: calc(100% - 150px) 180px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+/* gradient fade on background */
+body.view-mode-stanford-huge-landscape:after {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fbfbf9+0,fbfbf9+100&0+0,1+15 */
+    background: -moz-linear-gradient(left, rgba(251, 251, 249, 0) 0%, rgba(251, 251, 249, 1) 15%, rgba(251, 251, 249, 1) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(251, 251, 249, 0)), color-stop(15%, rgba(251, 251, 249, 1)), color-stop(100%, rgba(251, 251, 249, 1)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, rgba(251, 251, 249, 0) 0%, rgba(251, 251, 249, 1) 15%, rgba(251, 251, 249, 1) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgba(251, 251, 249, 0) 0%, rgba(251, 251, 249, 1) 15%, rgba(251, 251, 249, 1) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(251, 251, 249, 0) 0%, rgba(251, 251, 249, 1) 15%, rgba(251, 251, 249, 1) 100%);
+    /* IE10+ */
+    background: linear-gradient(to right, rgba(251, 251, 249, 0) 0%, rgba(251, 251, 249, 1) 15%, rgba(251, 251, 249, 1) 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00fbfbf9', endColorstr='#fbfbf9', GradientType=1);
+    /* IE6-9 */
+    content: "";
+    right: 0;
+    position: fixed;
+    width: 50%;
+    bottom: 0;
+    top: 0;
+    z-index: -1;
+}
+
+/* responsive styles stacking the image on top of text */
+@media (max-width: 767px) {
+    .view-mode-stanford-huge-landscape .content-body .postcard-image {
+        display: block;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .view-mode-stanford-huge-landscape .content-body .postcard-image img {
+        background-color: transparent;
+        box-shadow: none;
+        box-sizing: border-box;
+        margin-bottom: 0;
+        padding: 0;
+    }
+    .view-mode-stanford-huge-landscape .content-body .postcard-image::after {
+        background-image: -webkit-gradient(linear, to bottom, to top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, #fbfbf9));
+        background-image: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0), #fbfbf9);
+        background-image: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0), #fbfbf9);
+        background-image: -o-linear-gradient(to bottom, rgba(255, 255, 255, 0), #fbfbf9);
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fbfbf9);
+        content: "";
+        display: block;
+        height: 150px;
+        margin-top: -150px;
+        position: relative;
+        width: 100%;
+        z-index: 100;
+    }
+    body.view-mode-stanford-huge-landscape {
+        background: #fbfbf9;
+        background-image: none;
+    }
+    body.view-mode-stanford-huge-landscape:after {
+        content: none;
+    }
+    .view-mode-stanford-huge-landscape .content-body .postcard {
+        float: none;
+        position: relative;
+        width: 100%;
+    }
+    .view-mode-stanford-huge-landscape .content-body .postcard-content {
+        padding: 30px 30px 60px;
+    }
+}
+
+/* responsive styles for positioning the background image */
+@media (min-width: 1980px) {
+    body.view-mode-stanford-huge-landscape:after {
+        width: 53%;
+    }
+}
+@media (min-width: 1150px) {
+    body.view-mode-stanford-huge-landscape {
+        background-position: calc(100% - 300px) 180px;
+    }
+}
+@media (max-width: 1300px) {
+    body.view-mode-stanford-huge-landscape {
+        background-position: calc(100% - 100px) 180px;
+    }
+}
+@media (max-width: 1199px) {
+    body.view-mode-stanford-huge-landscape {
+        background-position: 100% 180px;
+    }
+}
+@media (max-width: 1090px) {
+    body.view-mode-stanford-huge-landscape {
+        background-position: 77% 180px;
+    }
+}
+@media (max-width: 979px) {
+    body.view-mode-stanford-huge-landscape {
+        background-position: 70% 180px;
+    }
+}
+
+
+/* -------- PRINT STYLESHEETS ----------- */
+
+@media print {
+    #top-logo {
+        display: none;
+    }
+    #header #logo {
+        display: none !important;
+    }
+    #header #name-and-slogan.with-logo {
+        padding-left: 0px;
+    }
+    #name-and-slogan #site-name,
+    #name-and-slogan #site-name a,
+    #name-and-slogan #site-slogan {
+        font-size: 12pt !important;
+    }
+    #footer {
+        display: none;
+    }
+    .element-invisible {
+        position: relative;
+        clip: auto;
+    }
+    html.js fieldset.collapsed .fieldset-wrapper {
+        display: block;
+        margin-bottom: 0px;
+    }
+    html.js fieldset.collapsible .fieldset-legend {
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+    html.js fieldset {
+        margin: 0px;
+        padding: 0px;
+        height: inherit;
+    }
+    html.js legend {
+        margin-bottom: 0px;
+        line-height: 1em;
+        font-size: 1.5em;
+        padding: 0px;
+    }
+    @page {
+        margin: 20mm 10mm;
+    }
+    body {
+        margin: 20mm 10mm;
+        font-size: 10pt;
+    }
+    * {
+        color: #000 !important;
+    }
+    #main-menu,
+    .logged-in .tabs,
+    #footer,
+    #global-footer,
+    #global-header,
+    #admin-shortcuts,
+    .block-menu-block {
+        display: none;
+    }
+    h1.page-title {
+        margin-top: 20px;
+        display: block;
+        clear: both;
+    }
+    img {
+        max-width: 100%;
+    }
+    a[href]:after {
+        font-size: 80%;
+        word-wrap: break-word;
+    }
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    li {
+        page-break-after: auto;
+        page-break-before: auto;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    li {
+        page-break-inside: avoid;
+    }
+    #header {
+        min-height: auto;
+        padding: 0px;
+        margin-bottom: 10mm;
+    }
+    #header a[href]:after {
+        display: none;
+    }
+    #sidebar-first,
+    #content,
+    #sidebar-second {
+        display: block;
+        width: 100%;
+    }
+    #block-menu-block-stanford-jsvpsa-layouts-4,
+    .workbench-info-block {
+        display: none;
+    }
+    table td,
+    table th {
+        border: 1px solid #000;
+    }
 }
