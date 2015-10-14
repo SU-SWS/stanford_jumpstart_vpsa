@@ -477,56 +477,43 @@ li.search-result .search-info {
 
 /* ---------- full-width image styles -------- */
 
-
 /* make the tabs readable */
-
 .logged-in .content-head {
     background: #fbfbf9;
 }
 
-
 /* positioning the text */
-
-.view-mode-stanford-huge-landscape .fullwidth .postcard {
+.view-mode-stanford-huge-landscape .content-body .postcard {
     background: #fbfbf9;
     box-sizing: border-box;
     float: right;
     position: relative;
     width: 37%;
 }
-
-.view-mode-stanford-huge-landscape .fullwidth .postcard-content {
+.view-mode-stanford-huge-landscape .content-body .postcard-content {
     padding: 30px 0 30px 30px;
 }
 
-
 /* hide the image by default */
-
-.view-mode-stanford-huge-landscape .fullwidth .postcard-image {
+.view-mode-stanford-huge-landscape .content-body .postcard-image {
     display: none;
 }
 
-
 /* stripping out margins for full-bleed effect */
-
 .view-mode-stanford-huge-landscape .main {
     padding-top: 0;
     padding-bottom: 0;
     background-color: transparent;
 }
-
 .view-mode-stanford-huge-landscape .content-head {
     margin-bottom: 0;
 }
-
 .view-mode-stanford-huge-landscape #content.span12 {
     min-height: 0;
     margin-bottom: 0;
 }
 
-
 /* background image */
-
 body.view-mode-stanford-huge-landscape {
     background-image: url("https://sites.stanford.edu/sa-jumpstart/sites/default/files/styles/huge-landscape/public/jarreau-bowen-120914-265-web.jpg?itok=yRvio9nE");
     background-position: calc(100% - 150px) 180px;
@@ -534,10 +521,7 @@ body.view-mode-stanford-huge-landscape {
     background-size: cover;
     position: relative;
 }
-
-
 /* gradient fade on background */
-
 body.view-mode-stanford-huge-landscape:after {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fbfbf9+0,fbfbf9+100&0+0,1+15 */
     background: -moz-linear-gradient(left, rgba(251, 251, 249, 0) 0%, rgba(251, 251, 249, 1) 15%, rgba(251, 251, 249, 1) 100%);
@@ -563,14 +547,21 @@ body.view-mode-stanford-huge-landscape:after {
     z-index: -1;
 }
 
-
 /* responsive styles stacking the image on top of text */
-
 @media (max-width: 767px) {
-    .view-mode-stanford-huge-landscape .fullwidth .postcard-image {
+    .view-mode-stanford-huge-landscape .content-body .postcard-image {
         display: block;
+        margin-left: -20px;
+        margin-right: -20px;
     }
-    .view-mode-stanford-huge-landscape .fullwidth .postcard-image::after {
+    .view-mode-stanford-huge-landscape .content-body .postcard-image img {
+        background-color: transparent;
+        box-shadow: none;
+        box-sizing: border-box;
+        margin-bottom: 0;
+        padding: 0;
+    }
+    .view-mode-stanford-huge-landscape .content-body .postcard-image::after {
         background-image: -webkit-gradient(linear, to bottom, to top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, #fbfbf9));
         background-image: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0), #fbfbf9);
         background-image: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0), #fbfbf9);
@@ -591,47 +582,37 @@ body.view-mode-stanford-huge-landscape:after {
     body.view-mode-stanford-huge-landscape:after {
         content: none;
     }
-    .view-mode-stanford-huge-landscape .fullwidth .postcard {
+    .view-mode-stanford-huge-landscape .content-body .postcard {
         float: none;
         position: relative;
         width: 100%;
     }
-    .fullwidth .container {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .view-mode-stanford-huge-landscape .fullwidth .postcard-content {
+    .view-mode-stanford-huge-landscape .content-body .postcard-content {
         padding: 30px 30px 60px;
     }
 }
 
-
 /* responsive styles for positioning the background image */
-
 @media (min-width: 1150px) {
     body.view-mode-stanford-huge-landscape {
         background-position: calc(100% - 300px) 180px;
     }
 }
-
 @media (max-width: 1300px) {
     body.view-mode-stanford-huge-landscape {
         background-position: calc(100% - 100px) 180px;
     }
 }
-
 @media (max-width: 1199px) {
     body.view-mode-stanford-huge-landscape {
         background-position: 100% 180px;
     }
 }
-
 @media (max-width: 1090px) {
     body.view-mode-stanford-huge-landscape {
         background-position: 77% 180px;
     }
 }
-
 @media (max-width: 979px) {
     body.view-mode-stanford-huge-landscape {
         background-position: 70% 180px;
