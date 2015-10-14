@@ -44,7 +44,7 @@ input.field-add-more-submit {
 input.form-submit,
 a.button,
 div.exposed-filters input#edit-submit {
-    background: #f0f0f0;
+    background-color: #f0f0f0;
     border: none;
     padding: 6px 10px;
     color: #777777;
@@ -53,7 +53,7 @@ div.exposed-filters input#edit-submit {
 input.form-submit:hover,
 a.button:hover,
 div.exposed-filters input#edit-submit:hover {
-    background: #0074BD;
+    background-color: #0074BD;
     /*  darker blue on rollover */
     color: #fff;
 }
@@ -76,7 +76,7 @@ input#edit-save,
 input#edit-actions-save,
 input#edit-submit-admin-views-node {
     color: #fff;
-    background: #4d8f46;
+    background-color: #4d8f46;
     /* green background*/
 }
 
@@ -87,7 +87,7 @@ input[id^="edit-save"]:hover,
 input#edit-save:hover,
 input#edit-actions-save:hover,
 input#edit-submit-admin-views-node:hover {
-    background: #0a6700;
+    background-color: #0a6700;
     /*  darker green on rollover */
 }
 
@@ -98,7 +98,7 @@ input[id^="edit-save"]:active,
 input#edit-save:active,
 input#edit-actions-save:active {
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.75) inset;
-    background: #333;
+    background-color: #333;
 }
 
 
@@ -112,7 +112,7 @@ input#edit-clear,
 .page-admin-modules-uninstall input#edit-submit,
 input.button-remove {
     color: #fff;
-    background: #b73939;
+    background-color: #b73939;
     /* red  */
 }
 
@@ -121,7 +121,7 @@ input#remove-button:hover,
 input#edit-remove:hover,
 input#edit-clear:hover,
 body.page-admin-modules-uninstall input#edit-submit:hover {
-    background: #990000;
+    background-color: #990000;
     /* darker red on rollover */
 }
 
@@ -131,7 +131,7 @@ input#edit-remove:active,
 input#edit-clear:active,
 body.page-admin-modules-uninstall input#edit-submit:active {
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.75) inset;
-    background: #333;
+    background-color: #333;
 }
 
 
@@ -147,14 +147,14 @@ input.views-submit-button,
 input.form-submit.field-add-more-submit,
 input.form-submit.ajax-processed input[id^="edit-return"] {
     color: #fff;
-    background: #0074BD;
+    background-color: #0074BD;
 }
 
 input#edit-preview:hover,
 input#edit-next:hover,
 input#preview-submit:hover,
 input[id^="edit-return"]:hover {
-    background: #004c99;
+    background-color: #004c99;
 }
 
 input#edit-preview:active,
@@ -162,7 +162,7 @@ input#edit-next:active,
 input#preview-submit:active,
 input[id^="edit-return"]:active {
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.75) inset;
-    background: #333;
+    background-color: #333;
 }
 
 
@@ -172,7 +172,7 @@ input[id^="edit-return"]:active {
 #edit-actions-cancel,
 input#edit-buttons-revert {
     color: #fff;
-    background: #f69231;
+    background-color: #f69231;
 }
 
 a#edit-cancel,
@@ -184,7 +184,7 @@ a#edit-actions-cancel {
 #edit-cancel:hover,
 #edit-actions-cancel:hover,
 input#edit-buttons-revert:hover {
-    background: #ef6114;
+    background-color: #ef6114;
     text-decoration: none;
 }
 
@@ -192,7 +192,7 @@ input#edit-buttons-revert:hover {
 #edit-actions-cancel:active,
 input#edit-buttons-revert:active {
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.75) inset;
-    background: #333;
+    background-color: #333;
 }
 
 
@@ -200,5 +200,5 @@ input#edit-buttons-revert:active {
 
 input.form-submit.field-add-more-submit {
     color: #fff;
-    background: #38a;
+    background-color: #38a;
 }
