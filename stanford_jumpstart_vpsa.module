@@ -39,6 +39,14 @@ function stanford_jumpstart_vpsa_wysiwyg_editor_settings_alter(&$settings, $cont
  */
 
 function stanford_jumpstart_vpsa_preprocess_page($variables) {
+
+  // If admin page. Add colorful buttons.
+  $admin_page = path_is_admin(current_path());
+  if ($admin_page) {
+    drupal_add_css(drupal_get_path("module", "stanford_jumpstart_vpsa") . "/css/admin-color-buttons.css");
+  }
+
+  // If on the stanford_page node then add collapse functions.
   if (isset($variables['node'])) {
     $node = $variables['node'];
     if ($node->type == "stanford_page" || $node->type == "page") {
@@ -46,5 +54,6 @@ function stanford_jumpstart_vpsa_preprocess_page($variables) {
       drupal_add_js('misc/form.js');
     }
   }
+
 }
 
