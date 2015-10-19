@@ -48,7 +48,6 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'name' => 'access jumpstart features',
     'roles' => array(
       'administrator' => 'administrator',
-      'site owner' => 'site owner',
     ),
     'module' => 'stanford_jumpstart',
   );
