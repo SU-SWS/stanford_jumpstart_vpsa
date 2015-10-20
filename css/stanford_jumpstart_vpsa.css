@@ -291,6 +291,13 @@ li.search-result .search-info {
     border: none;
 }
 
+/* Testimonial block */
+
+.quote,
+.views-field-field-s-page-testimonial-author {
+    margin-left: 10%;
+}
+
 /* -------- PRINT STYLESHEETS ----------- */
 
 @media print {
