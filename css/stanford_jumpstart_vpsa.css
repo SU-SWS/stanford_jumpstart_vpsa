@@ -277,6 +277,12 @@ li.search-result .search-info {
     }
 }
 
+/* People */
+
+.node-type-stanford-person .view-mode-default {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
 
 /* -------- PRINT STYLESHEETS ----------- */
 
