@@ -284,13 +284,6 @@ li.search-result .search-info {
     margin-bottom: 10px;
 }
 
-/* Gallery */
-
-.node-stanford-gallery .field-name-field-s-gallery-image-info > .field-items > .field-item a.stanford-gallery-image :hover,
-.node-stanford-gallery .field-name-field-s-gallery-image-info > .field-items > .field-item a.stanford-gallery-image :focus {
-    border: none;
-}
-
 /* Testimonial block */
 
 .quote,
