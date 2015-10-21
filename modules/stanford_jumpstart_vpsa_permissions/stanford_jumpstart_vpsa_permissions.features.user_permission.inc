@@ -268,6 +268,15 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'name' => 'create stanford_event_importer content',
     'roles' => array(
       'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'create stanford_gallery content'.
+  $permissions['create stanford_gallery content'] = array(
+    'name' => 'create stanford_gallery content',
+    'roles' => array(
+      'administrator' => 'administrator',
       'site owner' => 'site owner',
     ),
     'module' => 'node',
@@ -304,22 +313,22 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'create stanford_private_page content'.
-  $permissions['create stanford_private_page content'] = array(
-    'name' => 'create stanford_private_page content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'site owner' => 'site owner',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'create stanford_person content'.
   $permissions['create stanford_person content'] = array(
     'name' => 'create stanford_person content',
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'create stanford_private_page content'.
+  $permissions['create stanford_private_page content'] = array(
+    'name' => 'create stanford_private_page content',
+    'roles' => array(
+      'administrator' => 'administrator',
       'site owner' => 'site owner',
     ),
     'module' => 'node',
@@ -342,16 +351,6 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
-      'site owner' => 'site owner',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'create stanford_gallery content'.
-  $permissions['create stanford_gallery content'] = array(
-    'name' => 'create stanford_gallery content',
-    'roles' => array(
-      'administrator' => 'administrator',
       'site owner' => 'site owner',
     ),
     'module' => 'node',
@@ -414,6 +413,16 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete any stanford_gallery content'.
+  $permissions['delete any stanford_gallery content'] = array(
+    'name' => 'delete any stanford_gallery content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete any stanford_landing_page content'.
   $permissions['delete any stanford_landing_page content'] = array(
     'name' => 'delete any stanford_landing_page content',
@@ -445,9 +454,9 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'delete any stanford_private_page content'.
-  $permissions['delete any stanford_private_page content'] = array(
-    'name' => 'delete any stanford_private_page content',
+  // Exported permission: 'delete any stanford_person content'.
+  $permissions['delete any stanford_person content'] = array(
+    'name' => 'delete any stanford_person content',
     'roles' => array(
       'administrator' => 'administrator',
       'site owner' => 'site owner',
@@ -455,9 +464,9 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'delete any stanford_person content'.
-  $permissions['delete any stanford_person content'] = array(
-    'name' => 'delete any stanford_person content',
+  // Exported permission: 'delete any stanford_private_page content'.
+  $permissions['delete any stanford_private_page content'] = array(
+    'name' => 'delete any stanford_private_page content',
     'roles' => array(
       'administrator' => 'administrator',
       'site owner' => 'site owner',
@@ -478,16 +487,6 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
   // Exported permission: 'delete any stanford_video content'.
   $permissions['delete any stanford_video content'] = array(
     'name' => 'delete any stanford_video content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'site owner' => 'site owner',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete any stanford_gallery content'.
-  $permissions['delete any stanford_gallery content'] = array(
-    'name' => 'delete any stanford_gallery content',
     'roles' => array(
       'administrator' => 'administrator',
       'site owner' => 'site owner',
@@ -553,6 +552,15 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete own stanford_gallery content'.
+  $permissions['delete own stanford_gallery content'] = array(
+    'name' => 'delete own stanford_gallery content',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'delete own stanford_landing_page content'.
   $permissions['delete own stanford_landing_page content'] = array(
     'name' => 'delete own stanford_landing_page content',
@@ -586,22 +594,22 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'delete own stanford_private_page content'.
-  $permissions['delete own stanford_private_page content'] = array(
-    'name' => 'delete own stanford_private_page content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'site owner' => 'site owner',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'delete own stanford_person content'.
   $permissions['delete own stanford_person content'] = array(
     'name' => 'delete own stanford_person content',
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'delete own stanford_private_page content'.
+  $permissions['delete own stanford_private_page content'] = array(
+    'name' => 'delete own stanford_private_page content',
+    'roles' => array(
+      'administrator' => 'administrator',
       'site owner' => 'site owner',
     ),
     'module' => 'node',
@@ -838,6 +846,18 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit any stanford_gallery content'.
+  $permissions['edit any stanford_gallery content'] = array(
+    'name' => 'edit any stanford_gallery content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'site owner' => 'site owner',
+      'student assistant' => 'student assistant',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit any stanford_landing_page content'.
   $permissions['edit any stanford_landing_page content'] = array(
     'name' => 'edit any stanford_landing_page content',
@@ -874,9 +894,9 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'edit any stanford_private_page content'.
-  $permissions['edit any stanford_private_page content'] = array(
-    'name' => 'edit any stanford_private_page content',
+  // Exported permission: 'edit any stanford_person content'.
+  $permissions['edit any stanford_person content'] = array(
+    'name' => 'edit any stanford_person content',
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -886,9 +906,9 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'edit any stanford_person content'.
-  $permissions['edit any stanford_person content'] = array(
-    'name' => 'edit any stanford_person content',
+  // Exported permission: 'edit any stanford_private_page content'.
+  $permissions['edit any stanford_private_page content'] = array(
+    'name' => 'edit any stanford_private_page content',
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -913,18 +933,6 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
   // Exported permission: 'edit any stanford_video content'.
   $permissions['edit any stanford_video content'] = array(
     'name' => 'edit any stanford_video content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-      'site owner' => 'site owner',
-      'student assistant' => 'student assistant',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit any stanford_gallery content'.
-  $permissions['edit any stanford_gallery content'] = array(
-    'name' => 'edit any stanford_gallery content',
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
@@ -992,6 +1000,18 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'edit own stanford_gallery content'.
+  $permissions['edit own stanford_gallery content'] = array(
+    'name' => 'edit own stanford_gallery content',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+      'site owner' => 'site owner',
+      'student assistant' => 'student assistant',
+    ),
+    'module' => 'node',
+  );
+
   // Exported permission: 'edit own stanford_landing_page content'.
   $permissions['edit own stanford_landing_page content'] = array(
     'name' => 'edit own stanford_landing_page content',
@@ -1026,22 +1046,22 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'edit own stanford_private_page content'.
-  $permissions['edit own stanford_private_page content'] = array(
-    'name' => 'edit own stanford_private_page content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'site owner' => 'site owner',
-    ),
-    'module' => 'node',
-  );
-
   // Exported permission: 'edit own stanford_person content'.
   $permissions['edit own stanford_person content'] = array(
     'name' => 'edit own stanford_person content',
     'roles' => array(
       'administrator' => 'administrator',
       'editor' => 'editor',
+      'site owner' => 'site owner',
+    ),
+    'module' => 'node',
+  );
+
+  // Exported permission: 'edit own stanford_private_page content'.
+  $permissions['edit own stanford_private_page content'] = array(
+    'name' => 'edit own stanford_private_page content',
+    'roles' => array(
+      'administrator' => 'administrator',
       'site owner' => 'site owner',
     ),
     'module' => 'node',
@@ -1065,18 +1085,6 @@ function stanford_jumpstart_vpsa_permissions_user_default_permissions() {
       'administrator' => 'administrator',
       'editor' => 'editor',
       'site owner' => 'site owner',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit own stanford_gallery content'.
-  $permissions['edit own stanford_gallery content'] = array(
-    'name' => 'edit own stanford_gallery content',
-    'roles' => array(
-      'administrator' => 'administrator',
-      'editor' => 'editor',
-      'site owner' => 'site owner',
-      'student assistant' => 'student assistant',
     ),
     'module' => 'node',
   );
