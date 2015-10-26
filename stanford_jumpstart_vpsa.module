@@ -21,8 +21,19 @@ function stanford_jumpstart_vpsa_wysiwyg_editor_settings_alter(&$settings, $cont
         'class' => 'pullquote',
       ),
     );
+
+    // Remove the infotext style.
+    foreach ($settings['stylesSet'] as $k => $values) {
+      if ($values['name'] == "Infotext") {
+        unset($settings['stylesSet'][$k]);
+        break;
+      }
+    }
+
   }
 
+  // Keys need to be in order for some reason.
+  sort($settings['stylesSet']);
 }
 
 
