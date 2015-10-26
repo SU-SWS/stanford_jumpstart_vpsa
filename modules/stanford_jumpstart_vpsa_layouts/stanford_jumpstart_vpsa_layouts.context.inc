@@ -151,7 +151,7 @@ function stanford_jumpstart_vpsa_layouts_context_default_contexts() {
   $export['vpsa_homepage_dickinson'] = $context;
 
   $context = new stdClass();
-  $context->disabled = TRUE; /* Edit this to true to make a default context disabled initially */
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
   $context->name = 'vpsa_homepage_ellison';
   $context->description = 'VPSA homepage layout with banner, events, news, quick links';
@@ -214,7 +214,7 @@ function stanford_jumpstart_vpsa_layouts_context_default_contexts() {
   $export['vpsa_homepage_ellison'] = $context;
 
   $context = new stdClass();
-  $context->disabled = TRUE; /* Edit this to true to make a default context disabled initially */
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
   $context->name = 'vpsa_homepage_melville';
   $context->description = 'VPSA homepage layout with banner, news, story telling';
@@ -277,7 +277,7 @@ function stanford_jumpstart_vpsa_layouts_context_default_contexts() {
   $export['vpsa_homepage_melville'] = $context;
 
   $context = new stdClass();
-  $context->disabled = TRUE; /* Edit this to true to make a default context disabled initially */
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
   $context->name = 'vpsa_homepage_morrison';
   $context->description = 'VPSA homepage layout with banner, events, news, story telling';
@@ -352,7 +352,7 @@ function stanford_jumpstart_vpsa_layouts_context_default_contexts() {
   $export['vpsa_homepage_morrison'] = $context;
 
   $context = new stdClass();
-  $context->disabled = TRUE; /* Edit this to true to make a default context disabled initially */
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
   $context->name = 'vpsa_jumpstart_homepage';
   $context->description = 'VPSA homepage layout with carousel, events, news';
@@ -407,6 +407,42 @@ function stanford_jumpstart_vpsa_layouts_context_default_contexts() {
   t('Home Page');
   t('VPSA homepage layout with carousel, events, news');
   $export['vpsa_jumpstart_homepage'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'vpsa_news';
+  $context->description = 'Blocks placed on all announcement/news pages.';
+  $context->tag = 'News';
+  $context->conditions = array(
+    'node' => array(
+      'values' => array(
+        'stanford_news_item' => 'stanford_news_item',
+      ),
+      'options' => array(
+        'node_form' => '0',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'views-news_external_source-block' => array(
+          'module' => 'views',
+          'delta' => 'news_external_source-block',
+          'region' => 'content_top',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Blocks placed on all announcement/news pages.');
+  t('News');
+  $export['vpsa_news'] = $context;
 
   $context = new stdClass();
   $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
