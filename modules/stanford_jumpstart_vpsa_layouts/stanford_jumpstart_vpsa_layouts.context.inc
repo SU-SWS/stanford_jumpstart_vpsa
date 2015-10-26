@@ -151,7 +151,7 @@ function stanford_jumpstart_vpsa_layouts_context_default_contexts() {
   $export['vpsa_homepage_dickinson'] = $context;
 
   $context = new stdClass();
-  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->disabled = TRUE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
   $context->name = 'vpsa_homepage_ellison';
   $context->description = 'VPSA homepage layout with banner, events, news, quick links';
@@ -214,7 +214,7 @@ function stanford_jumpstart_vpsa_layouts_context_default_contexts() {
   $export['vpsa_homepage_ellison'] = $context;
 
   $context = new stdClass();
-  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->disabled = TRUE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
   $context->name = 'vpsa_homepage_melville';
   $context->description = 'VPSA homepage layout with banner, news, story telling';
@@ -277,7 +277,7 @@ function stanford_jumpstart_vpsa_layouts_context_default_contexts() {
   $export['vpsa_homepage_melville'] = $context;
 
   $context = new stdClass();
-  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->disabled = TRUE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
   $context->name = 'vpsa_homepage_morrison';
   $context->description = 'VPSA homepage layout with banner, events, news, story telling';
@@ -352,7 +352,7 @@ function stanford_jumpstart_vpsa_layouts_context_default_contexts() {
   $export['vpsa_homepage_morrison'] = $context;
 
   $context = new stdClass();
-  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->disabled = TRUE; /* Edit this to true to make a default context disabled initially */
   $context->api_version = 3;
   $context->name = 'vpsa_jumpstart_homepage';
   $context->description = 'VPSA homepage layout with carousel, events, news';
