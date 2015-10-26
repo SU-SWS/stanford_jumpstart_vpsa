@@ -14,14 +14,6 @@ function stanford_jumpstart_vpsa_wysiwyg_editor_settings_alter(&$settings, $cont
   $settings['contentsCss'][] = $editor_css;
 
   if ($context['profile']->format == "content_editor_text_format") {
-    // Add breakout box to the style set.
-    $settings['stylesSet'][] = array(
-      'name' => t('Breakout Box Light'),
-      'element' => 'p',
-      'attributes' => array(
-        'class' => 'callout',
-      ),
-    );
     $settings['stylesSet'][] = array(
       'name' => t('Breakout Box Dark'),
       'element' => 'p',
@@ -29,8 +21,19 @@ function stanford_jumpstart_vpsa_wysiwyg_editor_settings_alter(&$settings, $cont
         'class' => 'pullquote',
       ),
     );
+
+    // Remove the infotext style.
+    foreach ($settings['stylesSet'] as $k => $values) {
+      if ($values['name'] == "Infotext") {
+        unset($settings['stylesSet'][$k]);
+        break;
+      }
+    }
+
   }
 
+  // Keys need to be in order for some reason.
+  sort($settings['stylesSet']);
 }
 
 
