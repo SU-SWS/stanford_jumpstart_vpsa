@@ -1,8 +1,7 @@
 name = Stanford Jumpstart VPSA Basic Page Import
 core = 7.x
 package = Stanford Jumpstart VPSA
-php = 5.3
-version = 7.x-4.x
+version = 7.x-4.6
 dependencies[] = ctools
 dependencies[] = feeds
 dependencies[] = feeds_xpathparser
