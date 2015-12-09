@@ -15,14 +15,14 @@ function stanford_jumpstart_vpsa_permissions_update_7401(&$sandbox) {
     return;
   }
 
-  // Hoh damn, someone changed the permissions. Time to add any new ones. Leave
-  // existing ones along.
+  // Hoh damn, someone changed the permissions. Time to add any new ones.
+  // Leave existing ones along.
 
   $perms = stanford_jumpstart_vpsa_permissions_update_7401_get_permissions();
   $role_perms = array();
 
   // Now we have to re-sort them...
-  foreach ($perms as $key => $values) {
+  foreach ($perms as $values) {
     $roles = array_keys($values['roles']);
     foreach ($roles as $role) {
       $role_perms[$role][] = $values['name'];
@@ -40,7 +40,12 @@ function stanford_jumpstart_vpsa_permissions_update_7401(&$sandbox) {
 }
 
 
-
+/**
+ * A copy of the exported permissions.
+ *
+ * @return array
+ *   An array of permissisons.
+ */
 function stanford_jumpstart_vpsa_permissions_update_7401_get_permissions() {
   $permissions = array();
 
