@@ -1,4 +1,19 @@
 <?php
+
+/**
+ * Implements hook_update_dependencies().
+ */
+function stanford_jumpstart_vpsa_permissions_update_dependencies() {
+  $dependencies = array();
+
+  $dependencies['stanford_jumpstart_vpsa_permissions'][7401] = array(
+    'stanford_sites_jumpstart_vpsa' => 7400,
+  );
+
+  return $dependencies;
+}
+
+
 /**
  * Install new permissions if the features is marked as overridden.
  */
