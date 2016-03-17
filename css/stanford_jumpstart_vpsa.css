@@ -38,15 +38,12 @@
 }
 
 .node-type-stanford-landing-page .tile.column .field-name-field-s-lp-item-description {
-    position: absolute;
-    right: 0;
-    bottom: -17px;
-    color: #fff;
+    padding: 0 21.6px 5px 21.6px;
 }
 
 .node-type-stanford-landing-page .tile.column .tile-link h2 a {
     padding-top: 0;
-    padding-bottom: 1em;
+    padding-bottom: 0;
 }
 
 .node-type-stanford-landing-page .tile.column .tile-link:hover,
@@ -60,7 +57,6 @@
     }
     .node-type-stanford-landing-page .tile.column .tile-link h2 a {
         padding-top: .5em;
-        padding-bottom: .5em;
     }
 }
 
