@@ -30,10 +30,8 @@ function stanford_jumpstart_vpsa_wysiwyg_editor_settings_alter(&$settings, $cont
       }
     }
 
-    if (array_key_exists('stylesSet', $settings)) {
-      // Keys need to be in order for some reason.
-      sort($settings['stylesSet']);
-    }
+    // Keys need to be in order for some reason.
+    sort($settings['stylesSet']);
   }
 }
 
