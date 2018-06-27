@@ -1,10 +1,17 @@
 Stanford Sites Jumpstart VPSA x.x-x.x xxxx-xx-xx
 ------------------------------------------------
 
+Stanford Sites Jumptart VPSA 7.x-6.0                                  2018-06-26
+--------------------------------------------------------------------------------
+- Added composer.json
+
+Stanford Sites Jumpstart VPSA 7.x-5.0
+--------------------------------------------------------------------------------
+- Let's pretend this never happened. Mostly because it didn't.
+
 Stanford Sites Jumpstart VPSA 7.x-4.6+8-dev 2016-01-14
 ------------------------------------------------
 - Finalized upgrade path.
-
 
 Stanford Sites Jumpstart VPSA 7.x-4.6 2015-10-30
 ------------------------------------------------
