@@ -1,7 +1,7 @@
 name = Stanford Jumpstart VPSA Events Import
 core = 7.x
 package = Stanford Jumpstart VPSA
-version = 7.x-6.0
+version = 7.x-6.1-dev
 dependencies[] = ctools
 dependencies[] = feeds
 features[ctools][] = feeds:feeds_importer_default:1

@@ -1,6 +1,5 @@
 # Jumpstart VPSA
-------------------------------------------
-Version 7.x-6.0-dev
+Version 7.x-6.1-dev
 
 [![Code Climate](https://codeclimate.com/github/SU-SWS/stanford_jumpstart_vpsa/badges/gpa.svg)](https://codeclimate.com/github/SU-SWS/stanford_jumpstart_vpsa)
 
