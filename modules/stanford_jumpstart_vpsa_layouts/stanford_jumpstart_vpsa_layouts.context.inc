@@ -460,12 +460,6 @@ function stanford_jumpstart_vpsa_layouts_context_default_contexts() {
   $context->reactions = array(
     'block' => array(
       'blocks' => array(
-        'webauth-webauth_login_block' => array(
-          'module' => 'webauth',
-          'delta' => 'webauth_login_block',
-          'region' => 'global_header',
-          'weight' => '-10',
-        ),
         'stanford_jsvpsa_layouts-1' => array(
           'module' => 'menu_block',
           'delta' => 'stanford_jsvpsa_layouts-1',
