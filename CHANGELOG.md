@@ -1,6 +1,10 @@
 Stanford Sites Jumpstart VPSA x.x-x.x xxxx-xx-xx
 ------------------------------------------------
 
+Stanford Sites Jumptart VPSA 7.x-6.1                                  2018-12-10
+--------------------------------------------------------------------------------
+- Remove dependency on webauth for stanford_jumpstart_vpsa_layouts
+
 Stanford Sites Jumptart VPSA 7.x-6.0                                  2018-06-26
 --------------------------------------------------------------------------------
 - Added composer.json
