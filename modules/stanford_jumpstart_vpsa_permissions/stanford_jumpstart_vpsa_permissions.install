@@ -216,5 +216,10 @@ function stanford_jumpstart_vpsa_permissions_update_7401_get_permissions() {
     'module' => 'node',
   );
 
-  return $permissions;
+  $permissions_modules = user_permission_get_modules();
+  // If a permission doesn't exist, filter it out to prevent errors when trying
+  // to add a non-existent permission.
+  return array_filter($permissions, function ($permission) use ($permissions_modules) {
+    return isset($permissions_modules[$permission['name']]);
+  });
 }
