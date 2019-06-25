@@ -1,6 +1,10 @@
 Stanford Sites Jumpstart VPSA x.x-x.x xxxx-xx-xx
 ------------------------------------------------
 
+Stanford Sites Jumptart VPSA 7.x-6.2                                  2019-06-25
+--------------------------------------------------------------------------------
+- Bug fix: filter out non-existent permissions in update hook.
+
 Stanford Sites Jumptart VPSA 7.x-6.1                                  2018-12-10
 --------------------------------------------------------------------------------
 - Remove dependency on webauth for stanford_jumpstart_vpsa_layouts
